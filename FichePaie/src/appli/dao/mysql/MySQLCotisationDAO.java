@@ -1,4 +1,4 @@
-package principal.dao.mysql;
+package appli.dao.mysql;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -6,8 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import principal.dao.CotisationDAO;
-import principal.modele.metier.Cotisation;
+import appli.dao.CotisationDAO;
+import appli.modele.metier.Cotisation;
 
 public class MySQLCotisationDAO implements CotisationDAO {
 

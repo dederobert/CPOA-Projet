@@ -1,4 +1,4 @@
-package principal.dao;
+package appli.dao;
 
 /**
  * Interface principale de la DAO 1&2, permet de definir les methode de persistance CRUD

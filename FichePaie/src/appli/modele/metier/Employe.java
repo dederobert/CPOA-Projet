@@ -1,4 +1,4 @@
-package principal.modele.metier;
+package appli.modele.metier;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,13 +1,13 @@
-package principal.dao.factory;
+package appli.dao.factory;
 
-import principal.dao.CotisationDAO;
-import principal.dao.EmployeDAO;
-import principal.dao.RegleDAO;
-import principal.dao.VariableDAO;
-import principal.dao.arrayList.ArrayListCotisationDAO;
-import principal.dao.arrayList.ArrayListEmployeDAO;
-import principal.dao.arrayList.ArrayListRegleDAO;
-import principal.dao.arrayList.ArrayListVariableDAO;
+import appli.dao.CotisationDAO;
+import appli.dao.EmployeDAO;
+import appli.dao.RegleDAO;
+import appli.dao.VariableDAO;
+import appli.dao.arrayList.ArrayListCotisationDAO;
+import appli.dao.arrayList.ArrayListEmployeDAO;
+import appli.dao.arrayList.ArrayListRegleDAO;
+import appli.dao.arrayList.ArrayListVariableDAO;
 
 public class ArrayListDAOFactory extends DAOFactory{
 	

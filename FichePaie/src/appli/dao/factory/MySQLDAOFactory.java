@@ -1,13 +1,13 @@
-package principal.dao.factory;
+package appli.dao.factory;
 
-import principal.dao.CotisationDAO;
-import principal.dao.EmployeDAO;
-import principal.dao.RegleDAO;
-import principal.dao.VariableDAO;
-import principal.dao.mysql.MySQLCotisationDAO;
-import principal.dao.mysql.MySQLEmployeDAO;
-import principal.dao.mysql.MySQLRegleDAO;
-import principal.dao.mysql.MySQLVariableDAO;
+import appli.dao.CotisationDAO;
+import appli.dao.EmployeDAO;
+import appli.dao.RegleDAO;
+import appli.dao.VariableDAO;
+import appli.dao.mysql.MySQLCotisationDAO;
+import appli.dao.mysql.MySQLEmployeDAO;
+import appli.dao.mysql.MySQLRegleDAO;
+import appli.dao.mysql.MySQLVariableDAO;
 
 public class MySQLDAOFactory extends DAOFactory{
 	

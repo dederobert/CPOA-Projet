@@ -1,9 +1,9 @@
-package principal.dao.arrayList;
+package appli.dao.arrayList;
 
 import java.util.ArrayList;
 
-import principal.dao.CotisationDAO;
-import principal.modele.metier.Cotisation;
+import appli.dao.CotisationDAO;
+import appli.modele.metier.Cotisation;
 
 public class ArrayListCotisationDAO implements CotisationDAO{
 
@@ -13,6 +13,9 @@ public class ArrayListCotisationDAO implements CotisationDAO{
 	
 	private ArrayListCotisationDAO() {
 		setCotisations(new ArrayList<Cotisation>());
+		getCotisations().add(new Cotisation(1, "retraite", 0.8));
+		getCotisations().add(new Cotisation(2, "secu", 0.5));
+		getCotisations().add(new Cotisation(3, "patronal", 2));
 	}
 
 	public ArrayList<Cotisation> getCotisations() {

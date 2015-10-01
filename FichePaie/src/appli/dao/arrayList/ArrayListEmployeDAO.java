@@ -1,12 +1,12 @@
-package principal.dao.arrayList;
+package appli.dao.arrayList;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import principal.dao.EmployeDAO;
-import principal.modele.metier.Employe;
-import principal.modele.metier.Regle;
-import principal.modele.metier.Variable;
+import appli.dao.EmployeDAO;
+import appli.modele.metier.Employe;
+import appli.modele.metier.Regle;
+import appli.modele.metier.Variable;
 
 public class ArrayListEmployeDAO implements EmployeDAO {
 
@@ -15,9 +15,12 @@ public class ArrayListEmployeDAO implements EmployeDAO {
 
 	private ArrayListEmployeDAO() {
 		setEmployes(new ArrayList<Employe>());
+		getEmployes().add(new Employe(1, "LAJOUX", "Alexis", "metz"));
+		getEmployes().add(new Employe(2, "DINQUER", "Alexis", "metz"));
+		getEmployes().add(new Employe(3, "LEMETAYER", "Leo", "metz"));
 	}
 
-	public ArrayList<Employe> getemployes() {
+	public ArrayList<Employe> getEmployes() {
 		return employes;
 	}
 

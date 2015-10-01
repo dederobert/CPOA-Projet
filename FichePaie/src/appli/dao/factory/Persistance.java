@@ -1,4 +1,4 @@
-package principal.dao.factory;
+package appli.dao.factory;
 
 public enum Persistance {
 	MySQL,

@@ -1,4 +1,4 @@
-package principal.dao.mysql;
+package appli.dao.mysql;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,10 +8,10 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import principal.dao.EmployeDAO;
-import principal.modele.metier.Employe;
-import principal.modele.metier.Regle;
-import principal.modele.metier.Variable;
+import appli.dao.EmployeDAO;
+import appli.modele.metier.Employe;
+import appli.modele.metier.Regle;
+import appli.modele.metier.Variable;
 
 public class MySQLEmployeDAO implements EmployeDAO {
 

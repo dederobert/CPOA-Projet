@@ -1,4 +1,4 @@
-package principal.modele.metier;
+package appli.modele.metier;
 
 public class Regle {
 	

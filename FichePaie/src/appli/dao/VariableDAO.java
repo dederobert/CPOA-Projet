@@ -1,6 +1,6 @@
-package principal.dao;
+package appli.dao;
 
-import principal.modele.metier.Variable;
+import appli.modele.metier.Variable;
 /**
  * Interface de gestion de la persistance des Variable <br /> <b>DAO niveau 2</b>
  * @author alexis

@@ -1,4 +1,4 @@
-package principal.dao.mysql;
+package appli.dao.mysql;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -6,8 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import principal.dao.VariableDAO;
-import principal.modele.metier.Variable;
+import appli.dao.VariableDAO;
+import appli.modele.metier.Variable;
 
 public class MySQLVariableDAO implements VariableDAO {
 

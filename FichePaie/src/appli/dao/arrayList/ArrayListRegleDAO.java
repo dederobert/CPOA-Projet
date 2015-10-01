@@ -1,9 +1,9 @@
-package principal.dao.arrayList;
+package appli.dao.arrayList;
 
 import java.util.ArrayList;
 
-import principal.dao.RegleDAO;
-import principal.modele.metier.Regle;
+import appli.dao.RegleDAO;
+import appli.modele.metier.Regle;
 
 public class ArrayListRegleDAO implements RegleDAO{
 	
@@ -12,6 +12,9 @@ public class ArrayListRegleDAO implements RegleDAO{
 	
 	private ArrayListRegleDAO() {
 		setRegles(new ArrayList<Regle>());
+		getRegles().add(new Regle(1, "brut < 2500", "quelque chose", true));
+		getRegles().add(new Regle(2, "statut = cadre", "quelque chose d'autre", false));
+		getRegles().add(new Regle(3, "brut > 1500", "quelque chose", true));
 	}
 
 	@Override

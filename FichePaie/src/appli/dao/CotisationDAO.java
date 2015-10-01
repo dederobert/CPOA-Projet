@@ -1,6 +1,6 @@
-package principal.dao;
+package appli.dao;
 
-import principal.modele.metier.Cotisation;
+import appli.modele.metier.Cotisation;
 
 /**
  * Interface de la gestion de persistance des Cotisation <br /> <b>DAO niveau 2</b>

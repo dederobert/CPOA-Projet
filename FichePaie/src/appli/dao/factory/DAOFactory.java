@@ -1,9 +1,9 @@
-package principal.dao.factory;
+package appli.dao.factory;
 
-import principal.dao.CotisationDAO;
-import principal.dao.EmployeDAO;
-import principal.dao.RegleDAO;
-import principal.dao.VariableDAO;
+import appli.dao.CotisationDAO;
+import appli.dao.EmployeDAO;
+import appli.dao.RegleDAO;
+import appli.dao.VariableDAO;
 
 public abstract class DAOFactory {
 	public static DAOFactory getDAOFactory(Persistance cible)

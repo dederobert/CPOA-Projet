@@ -1,6 +1,6 @@
-package principal.dao;
+package appli.dao;
 
-import principal.modele.metier.Regle;
+import appli.modele.metier.Regle;
 /**
  * Interface de gestion de la persistance des Regle <br /> <b> DAO niveau 2</b>
  * @author alexis

@@ -1,11 +1,11 @@
-package principal.dao;
+package appli.dao;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import principal.modele.metier.Employe;
-import principal.modele.metier.Regle;
-import principal.modele.metier.Variable;
+import appli.modele.metier.Employe;
+import appli.modele.metier.Regle;
+import appli.modele.metier.Variable;
 /**
  * Interface de gestion de la persistance des employé <br /> <b> DAO niveau 2</b>
  * @author alexis

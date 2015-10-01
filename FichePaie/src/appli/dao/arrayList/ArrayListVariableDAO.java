@@ -1,9 +1,9 @@
-package principal.dao.arrayList;
+package appli.dao.arrayList;
 
 import java.util.ArrayList;
 
-import principal.dao.VariableDAO;
-import principal.modele.metier.Variable;
+import appli.dao.VariableDAO;
+import appli.modele.metier.Variable;
 
 public class ArrayListVariableDAO implements VariableDAO {
 
@@ -12,6 +12,9 @@ public class ArrayListVariableDAO implements VariableDAO {
 
 	private ArrayListVariableDAO() {
 		setVariables(new ArrayList<Variable>());
+		getVariables().add(new Variable(1, "brut"));
+		getVariables().add(new Variable(2, "statut"));
+		getVariables().add(new Variable(3, "horaire"));
 	}
 
 	public ArrayList<Variable> getVariables() {
