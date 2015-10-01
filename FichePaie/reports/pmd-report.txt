@@ -1,0 +1,798 @@
+src/principal/Main.java:10:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/principal/Main.java:10:	Avoid short class names like Main
+src/principal/Main.java:10:	headerCommentRequirement Required
+src/principal/Main.java:12:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/principal/Main.java:12:	Parameter 'args' is not assigned and could be declared final
+src/principal/Main.java:12:	publicMethodCommentRequirement Required
+src/principal/Main.java:13:	Local variable 'daof' could be declared final
+src/principal/Main.java:15:	Local variable 'emp1' could be declared final
+src/principal/Main.java:16:	Local variable 'emp2' could be declared final
+src/principal/Main.java:18:	Local variable 'rg1' could be declared final
+src/principal/Main.java:19:	Local variable 'rg2' could be declared final
+src/principal/Main.java:21:	Avoid variables with short names like v1
+src/principal/Main.java:21:	Local variable 'v1' could be declared final
+src/principal/Main.java:22:	Avoid variables with short names like v2
+src/principal/Main.java:22:	Local variable 'v2' could be declared final
+src/principal/Main.java:24:	Local variable 'cot1' could be declared final
+src/principal/Main.java:25:	Local variable 'cot2' could be declared final
+src/principal/Main.java:28:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:29:	Local variable 'id_emp' could be declared final
+src/principal/Main.java:29:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'id_emp' is not final.
+src/principal/Main.java:29:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:31:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:32:	Local variable 'id_regle' could be declared final
+src/principal/Main.java:32:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'id_regle' is not final.
+src/principal/Main.java:32:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:34:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:35:	Local variable 'id_var' could be declared final
+src/principal/Main.java:35:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'id_var' is not final.
+src/principal/Main.java:35:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:37:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:38:	Local variable 'id_cot' could be declared final
+src/principal/Main.java:38:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'id_cot' is not final.
+src/principal/Main.java:38:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:41:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:41:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:41:	System.out.println is used
+src/principal/Main.java:42:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:42:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:42:	System.out.println is used
+src/principal/Main.java:43:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:43:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:43:	System.out.println is used
+src/principal/Main.java:44:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:44:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:44:	System.out.println is used
+src/principal/Main.java:46:	System.out.println is used
+src/principal/Main.java:47:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:47:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:47:	System.out.println is used
+src/principal/Main.java:48:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:48:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:48:	System.out.println is used
+src/principal/Main.java:49:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:49:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:49:	System.out.println is used
+src/principal/Main.java:50:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:50:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:50:	System.out.println is used
+src/principal/Main.java:52:	System.out.println is used
+src/principal/Main.java:53:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:54:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:55:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:56:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:58:	System.out.println is used
+src/principal/Main.java:64:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:65:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:66:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:67:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:69:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:69:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:69:	System.out.println is used
+src/principal/Main.java:70:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:70:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:70:	System.out.println is used
+src/principal/Main.java:71:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:71:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:71:	System.out.println is used
+src/principal/Main.java:72:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:72:	Potential violation of Law of Demeter (method chain calls)
+src/principal/Main.java:72:	System.out.println is used
+src/principal/dao/CotisationDAO.java:6:	Comment is too large: Line too long
+src/principal/dao/CotisationDAO.java:12:	Avoid modifiers which are implied by the context
+src/principal/dao/CotisationDAO.java:12:	publicMethodCommentRequirement Required
+src/principal/dao/DAO.java:4:	Comment is too large: Line too long
+src/principal/dao/DAO.java:9:	Avoid short class names like DAO
+src/principal/dao/DAO.java:10:	Avoid modifiers which are implied by the context
+src/principal/dao/DAO.java:10:	Avoid variables with short names like id
+src/principal/dao/DAO.java:10:	publicMethodCommentRequirement Required
+src/principal/dao/DAO.java:11:	Avoid modifiers which are implied by the context
+src/principal/dao/DAO.java:11:	publicMethodCommentRequirement Required
+src/principal/dao/DAO.java:12:	Avoid modifiers which are implied by the context
+src/principal/dao/DAO.java:12:	publicMethodCommentRequirement Required
+src/principal/dao/DAO.java:13:	Avoid modifiers which are implied by the context
+src/principal/dao/DAO.java:13:	publicMethodCommentRequirement Required
+src/principal/dao/EmployeDAO.java:15:	Avoid modifiers which are implied by the context
+src/principal/dao/EmployeDAO.java:15:	publicMethodCommentRequirement Required
+src/principal/dao/EmployeDAO.java:16:	Avoid modifiers which are implied by the context
+src/principal/dao/EmployeDAO.java:16:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/principal/dao/EmployeDAO.java:16:	publicMethodCommentRequirement Required
+src/principal/dao/EmployeDAO.java:17:	Avoid modifiers which are implied by the context
+src/principal/dao/EmployeDAO.java:17:	Avoid using implementation types like 'HashMap'; use the interface instead
+src/principal/dao/EmployeDAO.java:17:	publicMethodCommentRequirement Required
+src/principal/dao/EmployeDAO.java:18:	Avoid modifiers which are implied by the context
+src/principal/dao/EmployeDAO.java:18:	publicMethodCommentRequirement Required
+src/principal/dao/EmployeDAO.java:19:	Avoid modifiers which are implied by the context
+src/principal/dao/EmployeDAO.java:19:	publicMethodCommentRequirement Required
+src/principal/dao/EmployeDAO.java:20:	Avoid modifiers which are implied by the context
+src/principal/dao/EmployeDAO.java:20:	publicMethodCommentRequirement Required
+src/principal/dao/EmployeDAO.java:21:	Avoid modifiers which are implied by the context
+src/principal/dao/EmployeDAO.java:21:	publicMethodCommentRequirement Required
+src/principal/dao/RegleDAO.java:10:	Avoid modifiers which are implied by the context
+src/principal/dao/RegleDAO.java:10:	publicMethodCommentRequirement Required
+src/principal/dao/VariableDAO.java:10:	Avoid modifiers which are implied by the context
+src/principal/dao/VariableDAO.java:10:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:1:	Package name contains upper case characters
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:8:	A class which only has private constructors should be final
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:8:	headerCommentRequirement Required
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:10:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:10:	Avoid using redundant field initializer for 'cotisations'
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:10:	fieldCommentRequirement Required
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:11:	Avoid using redundant field initializer for 'instance'
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:11:	fieldCommentRequirement Required
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:18:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:18:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:22:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:22:	Parameter 'cotisations' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:22:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:26:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:27:	Singleton is not thread safe
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:34:	Avoid variables with short names like id
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:34:	Parameter 'id' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:34:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:36:	Local variable 'index' could be declared final
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:37:	Assigning an Object to null is a code smell.  Consider refactoring.
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:37:	Avoid if (x != y) ..; else ..;
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:42:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:42:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:43:	Avoid variables with short names like id
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:43:	Found 'DD'-anomaly for variable 'id' (lines '43'-'45').
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:45:	Potential violation of Law of Demeter (method chain calls)
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:45:	Useless parentheses.
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:45:	Useless parentheses.
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:53:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:53:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:59:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:59:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:65:	Found 'UR'-anomaly for variable 'cotisation' (lines '65'-'68').
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:65:	Parameter 'libelle' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:65:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:66:	Local variable 'cotisation' could be declared final
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:68:	Potential violation of Law of Demeter (method chain calls)
+src/principal/dao/arrayList/ArrayListCotisationDAO.java:70:	A method should have only one exit point, and that should be the last statement in the method
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:1:	Package name contains upper case characters
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:11:	A class which only has private constructors should be final
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:11:	headerCommentRequirement Required
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:13:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:13:	Avoid using redundant field initializer for 'employes'
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:13:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:13:	fieldCommentRequirement Required
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:14:	Avoid using redundant field initializer for 'instance'
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:14:	fieldCommentRequirement Required
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:20:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:20:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:24:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:24:	Parameter 'employes' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:24:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:28:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:29:	Singleton is not thread safe
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:36:	Avoid variables with short names like id
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:36:	Parameter 'id' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:36:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:38:	Local variable 'index' could be declared final
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:39:	Assigning an Object to null is a code smell.  Consider refactoring.
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:39:	Avoid if (x != y) ..; else ..;
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:44:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:44:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:45:	Avoid variables with short names like id
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:45:	Found 'DD'-anomaly for variable 'id' (lines '45'-'47').
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:47:	Potential violation of Law of Demeter (method chain calls)
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:55:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:55:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:61:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:61:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:67:	Found 'UR'-anomaly for variable 'employe' (lines '67'-'69').
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:67:	Parameter 'nom' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:67:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:68:	Avoid using for statements without curly braces
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:68:	Local variable 'employe' could be declared final
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:69:	Potential violation of Law of Demeter (method chain calls)
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:70:	A method should have only one exit point, and that should be the last statement in the method
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:76:	Parameter 'employe' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:76:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:77:	Potential violation of Law of Demeter (method chain calls)
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:82:	Parameter 'employe' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:82:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:83:	Potential violation of Law of Demeter (method chain calls)
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:88:	Parameter 'employe' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:88:	Parameter 'regle' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:88:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:89:	Potential violation of Law of Demeter (method chain calls)
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:94:	Parameter 'employe' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:94:	Parameter 'valeur' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:94:	Parameter 'variable' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:94:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:95:	Potential violation of Law of Demeter (method chain calls)
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:100:	Parameter 'employe' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:100:	Parameter 'regle' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:100:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:101:	Potential violation of Law of Demeter (method chain calls)
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:105:	Parameter 'employe' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:105:	Parameter 'valeur' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:105:	Parameter 'variable' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:105:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListEmployeDAO.java:106:	Potential violation of Law of Demeter (method chain calls)
+src/principal/dao/arrayList/ArrayListRegleDAO.java:1:	Package name contains upper case characters
+src/principal/dao/arrayList/ArrayListRegleDAO.java:8:	A class which only has private constructors should be final
+src/principal/dao/arrayList/ArrayListRegleDAO.java:8:	headerCommentRequirement Required
+src/principal/dao/arrayList/ArrayListRegleDAO.java:10:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/principal/dao/arrayList/ArrayListRegleDAO.java:10:	Avoid using redundant field initializer for 'regles'
+src/principal/dao/arrayList/ArrayListRegleDAO.java:10:	fieldCommentRequirement Required
+src/principal/dao/arrayList/ArrayListRegleDAO.java:11:	Avoid using redundant field initializer for 'instance'
+src/principal/dao/arrayList/ArrayListRegleDAO.java:11:	fieldCommentRequirement Required
+src/principal/dao/arrayList/ArrayListRegleDAO.java:18:	Avoid variables with short names like id
+src/principal/dao/arrayList/ArrayListRegleDAO.java:18:	Parameter 'id' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListRegleDAO.java:18:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListRegleDAO.java:20:	Local variable 'index' could be declared final
+src/principal/dao/arrayList/ArrayListRegleDAO.java:21:	Assigning an Object to null is a code smell.  Consider refactoring.
+src/principal/dao/arrayList/ArrayListRegleDAO.java:21:	Avoid if (x != y) ..; else ..;
+src/principal/dao/arrayList/ArrayListRegleDAO.java:26:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListRegleDAO.java:26:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListRegleDAO.java:27:	Avoid variables with short names like id
+src/principal/dao/arrayList/ArrayListRegleDAO.java:27:	Found 'DD'-anomaly for variable 'id' (lines '27'-'29').
+src/principal/dao/arrayList/ArrayListRegleDAO.java:29:	Potential violation of Law of Demeter (method chain calls)
+src/principal/dao/arrayList/ArrayListRegleDAO.java:29:	Useless parentheses.
+src/principal/dao/arrayList/ArrayListRegleDAO.java:29:	Useless parentheses.
+src/principal/dao/arrayList/ArrayListRegleDAO.java:37:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListRegleDAO.java:37:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListRegleDAO.java:43:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListRegleDAO.java:43:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListRegleDAO.java:49:	Found 'UR'-anomaly for variable 'regle' (lines '49'-'51').
+src/principal/dao/arrayList/ArrayListRegleDAO.java:49:	Parameter 'condition' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListRegleDAO.java:49:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListRegleDAO.java:50:	Local variable 'regle' could be declared final
+src/principal/dao/arrayList/ArrayListRegleDAO.java:51:	Potential violation of Law of Demeter (method chain calls)
+src/principal/dao/arrayList/ArrayListRegleDAO.java:53:	A method should have only one exit point, and that should be the last statement in the method
+src/principal/dao/arrayList/ArrayListRegleDAO.java:59:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListRegleDAO.java:60:	Singleton is not thread safe
+src/principal/dao/arrayList/ArrayListRegleDAO.java:67:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/principal/dao/arrayList/ArrayListRegleDAO.java:67:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListRegleDAO.java:71:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/principal/dao/arrayList/ArrayListRegleDAO.java:71:	Parameter 'regles' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListRegleDAO.java:71:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListVariableDAO.java:1:	Package name contains upper case characters
+src/principal/dao/arrayList/ArrayListVariableDAO.java:8:	A class which only has private constructors should be final
+src/principal/dao/arrayList/ArrayListVariableDAO.java:8:	headerCommentRequirement Required
+src/principal/dao/arrayList/ArrayListVariableDAO.java:10:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/principal/dao/arrayList/ArrayListVariableDAO.java:10:	Avoid using redundant field initializer for 'variables'
+src/principal/dao/arrayList/ArrayListVariableDAO.java:10:	fieldCommentRequirement Required
+src/principal/dao/arrayList/ArrayListVariableDAO.java:11:	Avoid using redundant field initializer for 'instance'
+src/principal/dao/arrayList/ArrayListVariableDAO.java:11:	fieldCommentRequirement Required
+src/principal/dao/arrayList/ArrayListVariableDAO.java:17:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/principal/dao/arrayList/ArrayListVariableDAO.java:17:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListVariableDAO.java:21:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/principal/dao/arrayList/ArrayListVariableDAO.java:21:	Parameter 'variables' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListVariableDAO.java:21:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListVariableDAO.java:25:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListVariableDAO.java:26:	Singleton is not thread safe
+src/principal/dao/arrayList/ArrayListVariableDAO.java:33:	Avoid variables with short names like id
+src/principal/dao/arrayList/ArrayListVariableDAO.java:33:	Parameter 'id' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListVariableDAO.java:33:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListVariableDAO.java:35:	Local variable 'index' could be declared final
+src/principal/dao/arrayList/ArrayListVariableDAO.java:36:	Assigning an Object to null is a code smell.  Consider refactoring.
+src/principal/dao/arrayList/ArrayListVariableDAO.java:36:	Avoid if (x != y) ..; else ..;
+src/principal/dao/arrayList/ArrayListVariableDAO.java:41:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListVariableDAO.java:41:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListVariableDAO.java:42:	Avoid variables with short names like id
+src/principal/dao/arrayList/ArrayListVariableDAO.java:42:	Found 'DD'-anomaly for variable 'id' (lines '42'-'44').
+src/principal/dao/arrayList/ArrayListVariableDAO.java:44:	Potential violation of Law of Demeter (method chain calls)
+src/principal/dao/arrayList/ArrayListVariableDAO.java:52:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListVariableDAO.java:52:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListVariableDAO.java:58:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListVariableDAO.java:58:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListVariableDAO.java:64:	Found 'UR'-anomaly for variable 'variable' (lines '64'-'66').
+src/principal/dao/arrayList/ArrayListVariableDAO.java:64:	Parameter 'libelle' is not assigned and could be declared final
+src/principal/dao/arrayList/ArrayListVariableDAO.java:64:	publicMethodCommentRequirement Required
+src/principal/dao/arrayList/ArrayListVariableDAO.java:65:	Avoid using for statements without curly braces
+src/principal/dao/arrayList/ArrayListVariableDAO.java:65:	Local variable 'variable' could be declared final
+src/principal/dao/arrayList/ArrayListVariableDAO.java:66:	Potential violation of Law of Demeter (method chain calls)
+src/principal/dao/arrayList/ArrayListVariableDAO.java:67:	A method should have only one exit point, and that should be the last statement in the method
+src/principal/dao/factory/ArrayListDAOFactory.java:12:	headerCommentRequirement Required
+src/principal/dao/factory/ArrayListDAOFactory.java:14:	Avoid unnecessary constructors - the compiler will generate these for you
+src/principal/dao/factory/ArrayListDAOFactory.java:14:	Document empty constructor
+src/principal/dao/factory/ArrayListDAOFactory.java:14:	It is a good practice to call super() in a constructor
+src/principal/dao/factory/ArrayListDAOFactory.java:14:	publicMethodCommentRequirement Required
+src/principal/dao/factory/ArrayListDAOFactory.java:17:	publicMethodCommentRequirement Required
+src/principal/dao/factory/ArrayListDAOFactory.java:22:	publicMethodCommentRequirement Required
+src/principal/dao/factory/ArrayListDAOFactory.java:27:	publicMethodCommentRequirement Required
+src/principal/dao/factory/ArrayListDAOFactory.java:32:	publicMethodCommentRequirement Required
+src/principal/dao/factory/DAOFactory.java:8:	Abstract classes should be named AbstractXXX
+src/principal/dao/factory/DAOFactory.java:8:	headerCommentRequirement Required
+src/principal/dao/factory/DAOFactory.java:9:	Parameter 'cible' is not assigned and could be declared final
+src/principal/dao/factory/DAOFactory.java:9:	publicMethodCommentRequirement Required
+src/principal/dao/factory/DAOFactory.java:11:	Found 'DD'-anomaly for variable 'daoF' (lines '11'-'15').
+src/principal/dao/factory/DAOFactory.java:11:	Found 'DD'-anomaly for variable 'daoF' (lines '11'-'18').
+src/principal/dao/factory/DAOFactory.java:12:	A switch with less than three branches is inefficient, use a if statement instead.
+src/principal/dao/factory/DAOFactory.java:12:	Switch statements should have a default label
+src/principal/dao/factory/DAOFactory.java:24:	publicMethodCommentRequirement Required
+src/principal/dao/factory/DAOFactory.java:25:	publicMethodCommentRequirement Required
+src/principal/dao/factory/DAOFactory.java:26:	publicMethodCommentRequirement Required
+src/principal/dao/factory/DAOFactory.java:27:	publicMethodCommentRequirement Required
+src/principal/dao/factory/MySQLDAOFactory.java:12:	headerCommentRequirement Required
+src/principal/dao/factory/MySQLDAOFactory.java:14:	Avoid unnecessary constructors - the compiler will generate these for you
+src/principal/dao/factory/MySQLDAOFactory.java:14:	Document empty constructor
+src/principal/dao/factory/MySQLDAOFactory.java:14:	It is a good practice to call super() in a constructor
+src/principal/dao/factory/MySQLDAOFactory.java:14:	publicMethodCommentRequirement Required
+src/principal/dao/factory/MySQLDAOFactory.java:17:	publicMethodCommentRequirement Required
+src/principal/dao/factory/MySQLDAOFactory.java:22:	publicMethodCommentRequirement Required
+src/principal/dao/factory/MySQLDAOFactory.java:27:	publicMethodCommentRequirement Required
+src/principal/dao/factory/MySQLDAOFactory.java:32:	publicMethodCommentRequirement Required
+src/principal/dao/factory/Persistance.java:3:	enumCommentRequirement Required
+src/principal/dao/mysql/Connexion.java:11:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/principal/dao/mysql/Connexion.java:11:	headerCommentRequirement Required
+src/principal/dao/mysql/Connexion.java:12:	Use explicit scoping instead of the default package private level
+src/principal/dao/mysql/Connexion.java:12:	fieldCommentRequirement Required
+src/principal/dao/mysql/Connexion.java:13:	Use explicit scoping instead of the default package private level
+src/principal/dao/mysql/Connexion.java:13:	fieldCommentRequirement Required
+src/principal/dao/mysql/Connexion.java:15:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/Connexion.java:23:	Avoid printStackTrace(); use a logger call instead.
+src/principal/dao/mysql/Connexion.java:23:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/Connexion.java:26:	Local variable 'url' could be declared final
+src/principal/dao/mysql/Connexion.java:29:	Local variable 'user' could be declared final
+src/principal/dao/mysql/Connexion.java:30:	Local variable 'password' could be declared final
+src/principal/dao/mysql/Connexion.java:32:	Found 'DD'-anomaly for variable 'maConnexion' (lines '32'-'35').
+src/principal/dao/mysql/Connexion.java:37:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/Connexion.java:37:	System.out.println is used
+src/principal/dao/mysql/MySQLCotisationDAO.java:12:	A class which only has private constructors should be final
+src/principal/dao/mysql/MySQLCotisationDAO.java:12:	headerCommentRequirement Required
+src/principal/dao/mysql/MySQLCotisationDAO.java:14:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/principal/dao/mysql/MySQLCotisationDAO.java:14:	Private field 'connexion' could be made final; it is only initialized in the declaration or constructor.
+src/principal/dao/mysql/MySQLCotisationDAO.java:14:	fieldCommentRequirement Required
+src/principal/dao/mysql/MySQLCotisationDAO.java:15:	Avoid using redundant field initializer for 'instance'
+src/principal/dao/mysql/MySQLCotisationDAO.java:15:	fieldCommentRequirement Required
+src/principal/dao/mysql/MySQLCotisationDAO.java:20:	Avoid variables with short names like id
+src/principal/dao/mysql/MySQLCotisationDAO.java:20:	Parameter 'id' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLCotisationDAO.java:20:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLCotisationDAO.java:21:	Found 'DD'-anomaly for variable 'req' (lines '21'-'26').
+src/principal/dao/mysql/MySQLCotisationDAO.java:22:	Always check the return of one of the navigation method (next,previous,first,last) of a ResultSet.
+src/principal/dao/mysql/MySQLCotisationDAO.java:22:	Found 'DD'-anomaly for variable 'res' (lines '22'-'29').
+src/principal/dao/mysql/MySQLCotisationDAO.java:23:	Found 'DD'-anomaly for variable 'cotisation' (lines '23'-'31').
+src/principal/dao/mysql/MySQLCotisationDAO.java:34:	System.err.println is used
+src/principal/dao/mysql/MySQLCotisationDAO.java:34:	The String literal "Erreur lors de l'execution de la requete : " appears 5 times in this file; the first occurrence is on line 34
+src/principal/dao/mysql/MySQLCotisationDAO.java:41:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLCotisationDAO.java:41:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLCotisationDAO.java:42:	Found 'DD'-anomaly for variable 'req' (lines '42'-'47').
+src/principal/dao/mysql/MySQLCotisationDAO.java:43:	Always check the return of one of the navigation method (next,previous,first,last) of a ResultSet.
+src/principal/dao/mysql/MySQLCotisationDAO.java:43:	Found 'DD'-anomaly for variable 'res' (lines '43'-'54').
+src/principal/dao/mysql/MySQLCotisationDAO.java:44:	Found 'DD'-anomaly for variable 'key' (lines '44'-'56').
+src/principal/dao/mysql/MySQLCotisationDAO.java:51:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLCotisationDAO.java:52:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLCotisationDAO.java:53:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLCotisationDAO.java:54:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLCotisationDAO.java:55:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLCotisationDAO.java:56:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLCotisationDAO.java:58:	System.err.println is used
+src/principal/dao/mysql/MySQLCotisationDAO.java:59:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLCotisationDAO.java:66:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLCotisationDAO.java:66:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLCotisationDAO.java:67:	Found 'DD'-anomaly for variable 'req' (lines '67'-'71').
+src/principal/dao/mysql/MySQLCotisationDAO.java:68:	Found 'DD'-anomaly for variable 'nbligne' (lines '68'-'78').
+src/principal/dao/mysql/MySQLCotisationDAO.java:75:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLCotisationDAO.java:76:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLCotisationDAO.java:77:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLCotisationDAO.java:78:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLCotisationDAO.java:80:	System.err.println is used
+src/principal/dao/mysql/MySQLCotisationDAO.java:81:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLCotisationDAO.java:87:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLCotisationDAO.java:87:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLCotisationDAO.java:88:	Found 'DD'-anomaly for variable 'req' (lines '88'-'92').
+src/principal/dao/mysql/MySQLCotisationDAO.java:89:	Found 'DD'-anomaly for variable 'nbligne' (lines '89'-'97').
+src/principal/dao/mysql/MySQLCotisationDAO.java:96:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLCotisationDAO.java:97:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLCotisationDAO.java:99:	System.err.println is used
+src/principal/dao/mysql/MySQLCotisationDAO.java:100:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLCotisationDAO.java:106:	Parameter 'libelle' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLCotisationDAO.java:106:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLCotisationDAO.java:107:	Found 'DD'-anomaly for variable 'req' (lines '107'-'112').
+src/principal/dao/mysql/MySQLCotisationDAO.java:108:	Always check the return of one of the navigation method (next,previous,first,last) of a ResultSet.
+src/principal/dao/mysql/MySQLCotisationDAO.java:108:	Found 'DD'-anomaly for variable 'res' (lines '108'-'115').
+src/principal/dao/mysql/MySQLCotisationDAO.java:109:	Found 'DD'-anomaly for variable 'cotisation' (lines '109'-'117').
+src/principal/dao/mysql/MySQLCotisationDAO.java:120:	System.err.println is used
+src/principal/dao/mysql/MySQLCotisationDAO.java:126:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLCotisationDAO.java:127:	Singleton is not thread safe
+src/principal/dao/mysql/MySQLEmployeDAO.java:16:	A class which only has private constructors should be final
+src/principal/dao/mysql/MySQLEmployeDAO.java:16:	headerCommentRequirement Required
+src/principal/dao/mysql/MySQLEmployeDAO.java:18:	Avoid using redundant field initializer for 'connexion'
+src/principal/dao/mysql/MySQLEmployeDAO.java:18:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/principal/dao/mysql/MySQLEmployeDAO.java:18:	Use explicit scoping instead of the default package private level
+src/principal/dao/mysql/MySQLEmployeDAO.java:18:	fieldCommentRequirement Required
+src/principal/dao/mysql/MySQLEmployeDAO.java:19:	Avoid using redundant field initializer for 'instance'
+src/principal/dao/mysql/MySQLEmployeDAO.java:19:	fieldCommentRequirement Required
+src/principal/dao/mysql/MySQLEmployeDAO.java:26:	Avoid variables with short names like id
+src/principal/dao/mysql/MySQLEmployeDAO.java:26:	Parameter 'id' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLEmployeDAO.java:26:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLEmployeDAO.java:27:	Found 'DD'-anomaly for variable 'req' (lines '27'-'31').
+src/principal/dao/mysql/MySQLEmployeDAO.java:28:	Always check the return of one of the navigation method (next,previous,first,last) of a ResultSet.
+src/principal/dao/mysql/MySQLEmployeDAO.java:28:	Found 'DD'-anomaly for variable 'res' (lines '28'-'35').
+src/principal/dao/mysql/MySQLEmployeDAO.java:29:	Found 'DD'-anomaly for variable 'employe' (lines '29'-'37').
+src/principal/dao/mysql/MySQLEmployeDAO.java:33:	The String literal " WHERE id_emp = ?" appears 4 times in this file; the first occurrence is on line 33
+src/principal/dao/mysql/MySQLEmployeDAO.java:40:	System.err.println is used
+src/principal/dao/mysql/MySQLEmployeDAO.java:47:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLEmployeDAO.java:47:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLEmployeDAO.java:48:	Found 'DD'-anomaly for variable 'req' (lines '48'-'52').
+src/principal/dao/mysql/MySQLEmployeDAO.java:49:	Always check the return of one of the navigation method (next,previous,first,last) of a ResultSet.
+src/principal/dao/mysql/MySQLEmployeDAO.java:49:	Found 'DD'-anomaly for variable 'res' (lines '49'-'59').
+src/principal/dao/mysql/MySQLEmployeDAO.java:50:	Found 'DD'-anomaly for variable 'key' (lines '50'-'61').
+src/principal/dao/mysql/MySQLEmployeDAO.java:55:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:56:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:57:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:58:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:59:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:60:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:61:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:63:	System.err.println is used
+src/principal/dao/mysql/MySQLEmployeDAO.java:64:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:71:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLEmployeDAO.java:71:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLEmployeDAO.java:72:	Found 'DD'-anomaly for variable 'req' (lines '72'-'75').
+src/principal/dao/mysql/MySQLEmployeDAO.java:73:	Found 'DD'-anomaly for variable 'nbLigne' (lines '73'-'82').
+src/principal/dao/mysql/MySQLEmployeDAO.java:78:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:79:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:80:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:81:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:82:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:84:	System.err.println is used
+src/principal/dao/mysql/MySQLEmployeDAO.java:85:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:91:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLEmployeDAO.java:91:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLEmployeDAO.java:92:	Found 'DD'-anomaly for variable 'req' (lines '92'-'95').
+src/principal/dao/mysql/MySQLEmployeDAO.java:93:	Found 'DD'-anomaly for variable 'nbLine' (lines '93'-'98').
+src/principal/dao/mysql/MySQLEmployeDAO.java:97:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:98:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:100:	System.err.println is used
+src/principal/dao/mysql/MySQLEmployeDAO.java:101:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:107:	Parameter 'nom' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLEmployeDAO.java:107:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLEmployeDAO.java:108:	Found 'DD'-anomaly for variable 'req' (lines '108'-'112').
+src/principal/dao/mysql/MySQLEmployeDAO.java:109:	Always check the return of one of the navigation method (next,previous,first,last) of a ResultSet.
+src/principal/dao/mysql/MySQLEmployeDAO.java:109:	Found 'DD'-anomaly for variable 'res' (lines '109'-'117').
+src/principal/dao/mysql/MySQLEmployeDAO.java:110:	Found 'DD'-anomaly for variable 'employe' (lines '110'-'119').
+src/principal/dao/mysql/MySQLEmployeDAO.java:122:	System.err.println is used
+src/principal/dao/mysql/MySQLEmployeDAO.java:129:	Parameter 'employe' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLEmployeDAO.java:129:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLEmployeDAO.java:130:	Found 'DD'-anomaly for variable 'req' (lines '130'-'134').
+src/principal/dao/mysql/MySQLEmployeDAO.java:131:	Found 'DD'-anomaly for variable 'res' (lines '131'-'140').
+src/principal/dao/mysql/MySQLEmployeDAO.java:132:	Local variable 'regles' could be declared final
+src/principal/dao/mysql/MySQLEmployeDAO.java:139:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:140:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:141:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:142:	Avoid instantiating new objects inside loops
+src/principal/dao/mysql/MySQLEmployeDAO.java:142:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:142:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:142:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:143:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:147:	System.err.println is used
+src/principal/dao/mysql/MySQLEmployeDAO.java:148:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:154:	Parameter 'employe' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLEmployeDAO.java:154:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLEmployeDAO.java:156:	Found 'DD'-anomaly for variable 'req' (lines '156'-'160').
+src/principal/dao/mysql/MySQLEmployeDAO.java:157:	Found 'DD'-anomaly for variable 'res' (lines '157'-'166').
+src/principal/dao/mysql/MySQLEmployeDAO.java:158:	Local variable 'vars' could be declared final
+src/principal/dao/mysql/MySQLEmployeDAO.java:165:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:166:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:167:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:168:	Avoid instantiating new objects inside loops
+src/principal/dao/mysql/MySQLEmployeDAO.java:168:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:168:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:169:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:174:	System.err.println is used
+src/principal/dao/mysql/MySQLEmployeDAO.java:175:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:181:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLEmployeDAO.java:182:	Singleton is not thread safe
+src/principal/dao/mysql/MySQLEmployeDAO.java:189:	Parameter 'employe' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLEmployeDAO.java:189:	Parameter 'regle' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLEmployeDAO.java:189:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLEmployeDAO.java:190:	Found 'DD'-anomaly for variable 'requete' (lines '190'-'192').
+src/principal/dao/mysql/MySQLEmployeDAO.java:193:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:194:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:195:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:198:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:198:	System.err.println is used
+src/principal/dao/mysql/MySQLEmployeDAO.java:200:	Potential violation of Law of Demeter (method chain calls)
+src/principal/dao/mysql/MySQLEmployeDAO.java:204:	Parameter 'employe' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLEmployeDAO.java:204:	Parameter 'valeur' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLEmployeDAO.java:204:	Parameter 'variable' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLEmployeDAO.java:204:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLEmployeDAO.java:205:	Found 'DD'-anomaly for variable 'requete' (lines '205'-'207').
+src/principal/dao/mysql/MySQLEmployeDAO.java:208:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:209:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:210:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:211:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:214:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:214:	System.err.println is used
+src/principal/dao/mysql/MySQLEmployeDAO.java:216:	Potential violation of Law of Demeter (method chain calls)
+src/principal/dao/mysql/MySQLEmployeDAO.java:221:	Parameter 'employe' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLEmployeDAO.java:221:	Parameter 'regle' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLEmployeDAO.java:221:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLEmployeDAO.java:222:	Found 'DD'-anomaly for variable 'requete' (lines '222'-'224').
+src/principal/dao/mysql/MySQLEmployeDAO.java:225:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:226:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:227:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:230:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:230:	System.err.println is used
+src/principal/dao/mysql/MySQLEmployeDAO.java:232:	Potential violation of Law of Demeter (method chain calls)
+src/principal/dao/mysql/MySQLEmployeDAO.java:237:	Parameter 'employe' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLEmployeDAO.java:237:	Parameter 'valeur' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLEmployeDAO.java:237:	Parameter 'variable' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLEmployeDAO.java:237:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLEmployeDAO.java:238:	Found 'DD'-anomaly for variable 'requete' (lines '238'-'240').
+src/principal/dao/mysql/MySQLEmployeDAO.java:241:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:242:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:243:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:246:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLEmployeDAO.java:246:	System.err.println is used
+src/principal/dao/mysql/MySQLEmployeDAO.java:248:	Potential violation of Law of Demeter (method chain calls)
+src/principal/dao/mysql/MySQLRegleDAO.java:12:	A class which only has private constructors should be final
+src/principal/dao/mysql/MySQLRegleDAO.java:12:	headerCommentRequirement Required
+src/principal/dao/mysql/MySQLRegleDAO.java:14:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/principal/dao/mysql/MySQLRegleDAO.java:14:	Private field 'connexion' could be made final; it is only initialized in the declaration or constructor.
+src/principal/dao/mysql/MySQLRegleDAO.java:14:	fieldCommentRequirement Required
+src/principal/dao/mysql/MySQLRegleDAO.java:15:	Avoid using redundant field initializer for 'instance'
+src/principal/dao/mysql/MySQLRegleDAO.java:15:	fieldCommentRequirement Required
+src/principal/dao/mysql/MySQLRegleDAO.java:20:	Avoid variables with short names like id
+src/principal/dao/mysql/MySQLRegleDAO.java:20:	Parameter 'id' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLRegleDAO.java:20:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLRegleDAO.java:21:	Found 'DD'-anomaly for variable 'req' (lines '21'-'26').
+src/principal/dao/mysql/MySQLRegleDAO.java:22:	Always check the return of one of the navigation method (next,previous,first,last) of a ResultSet.
+src/principal/dao/mysql/MySQLRegleDAO.java:22:	Found 'DD'-anomaly for variable 'res' (lines '22'-'30').
+src/principal/dao/mysql/MySQLRegleDAO.java:23:	Found 'DD'-anomaly for variable 'regle' (lines '23'-'32').
+src/principal/dao/mysql/MySQLRegleDAO.java:35:	System.err.println is used
+src/principal/dao/mysql/MySQLRegleDAO.java:43:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLRegleDAO.java:43:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLRegleDAO.java:44:	Found 'DD'-anomaly for variable 'req' (lines '44'-'48').
+src/principal/dao/mysql/MySQLRegleDAO.java:45:	Always check the return of one of the navigation method (next,previous,first,last) of a ResultSet.
+src/principal/dao/mysql/MySQLRegleDAO.java:45:	Found 'DD'-anomaly for variable 'res' (lines '45'-'57').
+src/principal/dao/mysql/MySQLRegleDAO.java:46:	Found 'DD'-anomaly for variable 'key' (lines '46'-'59').
+src/principal/dao/mysql/MySQLRegleDAO.java:53:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLRegleDAO.java:54:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLRegleDAO.java:55:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLRegleDAO.java:56:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLRegleDAO.java:57:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLRegleDAO.java:58:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLRegleDAO.java:59:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLRegleDAO.java:61:	System.err.println is used
+src/principal/dao/mysql/MySQLRegleDAO.java:62:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLRegleDAO.java:69:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLRegleDAO.java:69:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLRegleDAO.java:70:	Found 'DD'-anomaly for variable 'req' (lines '70'-'73').
+src/principal/dao/mysql/MySQLRegleDAO.java:71:	Found 'DD'-anomaly for variable 'nbLine' (lines '71'-'80').
+src/principal/dao/mysql/MySQLRegleDAO.java:76:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLRegleDAO.java:77:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLRegleDAO.java:78:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLRegleDAO.java:79:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLRegleDAO.java:80:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLRegleDAO.java:82:	System.err.println is used
+src/principal/dao/mysql/MySQLRegleDAO.java:83:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLRegleDAO.java:89:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLRegleDAO.java:89:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLRegleDAO.java:90:	Found 'DD'-anomaly for variable 'req' (lines '90'-'93').
+src/principal/dao/mysql/MySQLRegleDAO.java:91:	Found 'DD'-anomaly for variable 'nbLine' (lines '91'-'96').
+src/principal/dao/mysql/MySQLRegleDAO.java:95:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLRegleDAO.java:96:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLRegleDAO.java:98:	System.err.println is used
+src/principal/dao/mysql/MySQLRegleDAO.java:99:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLRegleDAO.java:105:	Parameter 'condition' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLRegleDAO.java:105:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLRegleDAO.java:106:	Found 'DD'-anomaly for variable 'req' (lines '106'-'110').
+src/principal/dao/mysql/MySQLRegleDAO.java:107:	Always check the return of one of the navigation method (next,previous,first,last) of a ResultSet.
+src/principal/dao/mysql/MySQLRegleDAO.java:107:	Found 'DD'-anomaly for variable 'res' (lines '107'-'114').
+src/principal/dao/mysql/MySQLRegleDAO.java:108:	Found 'DD'-anomaly for variable 'regle' (lines '108'-'116').
+src/principal/dao/mysql/MySQLRegleDAO.java:119:	System.err.println is used
+src/principal/dao/mysql/MySQLRegleDAO.java:125:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLRegleDAO.java:126:	Singleton is not thread safe
+src/principal/dao/mysql/MySQLVariableDAO.java:12:	A class which only has private constructors should be final
+src/principal/dao/mysql/MySQLVariableDAO.java:12:	headerCommentRequirement Required
+src/principal/dao/mysql/MySQLVariableDAO.java:14:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/principal/dao/mysql/MySQLVariableDAO.java:14:	Private field 'connexion' could be made final; it is only initialized in the declaration or constructor.
+src/principal/dao/mysql/MySQLVariableDAO.java:14:	fieldCommentRequirement Required
+src/principal/dao/mysql/MySQLVariableDAO.java:15:	Avoid using redundant field initializer for 'instance'
+src/principal/dao/mysql/MySQLVariableDAO.java:15:	fieldCommentRequirement Required
+src/principal/dao/mysql/MySQLVariableDAO.java:20:	Avoid variables with short names like id
+src/principal/dao/mysql/MySQLVariableDAO.java:20:	Parameter 'id' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLVariableDAO.java:20:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLVariableDAO.java:21:	Found 'DD'-anomaly for variable 'req' (lines '21'-'26').
+src/principal/dao/mysql/MySQLVariableDAO.java:22:	Always check the return of one of the navigation method (next,previous,first,last) of a ResultSet.
+src/principal/dao/mysql/MySQLVariableDAO.java:22:	Found 'DD'-anomaly for variable 'res' (lines '22'-'29').
+src/principal/dao/mysql/MySQLVariableDAO.java:23:	Found 'DD'-anomaly for variable 'variable' (lines '23'-'31').
+src/principal/dao/mysql/MySQLVariableDAO.java:33:	System.err.println is used
+src/principal/dao/mysql/MySQLVariableDAO.java:33:	The String literal "Erreur lors de l'execution de la requete : " appears 5 times in this file; the first occurrence is on line 33
+src/principal/dao/mysql/MySQLVariableDAO.java:40:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLVariableDAO.java:40:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLVariableDAO.java:41:	Found 'DD'-anomaly for variable 'req' (lines '41'-'46').
+src/principal/dao/mysql/MySQLVariableDAO.java:42:	Always check the return of one of the navigation method (next,previous,first,last) of a ResultSet.
+src/principal/dao/mysql/MySQLVariableDAO.java:42:	Found 'DD'-anomaly for variable 'res' (lines '42'-'51').
+src/principal/dao/mysql/MySQLVariableDAO.java:43:	Found 'DD'-anomaly for variable 'key' (lines '43'-'53').
+src/principal/dao/mysql/MySQLVariableDAO.java:49:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLVariableDAO.java:50:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLVariableDAO.java:51:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLVariableDAO.java:52:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLVariableDAO.java:53:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLVariableDAO.java:55:	System.err.println is used
+src/principal/dao/mysql/MySQLVariableDAO.java:56:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLVariableDAO.java:63:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLVariableDAO.java:63:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLVariableDAO.java:64:	Found 'DD'-anomaly for variable 'req' (lines '64'-'68').
+src/principal/dao/mysql/MySQLVariableDAO.java:65:	Found 'DD'-anomaly for variable 'nbligne' (lines '65'-'73').
+src/principal/dao/mysql/MySQLVariableDAO.java:71:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLVariableDAO.java:72:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLVariableDAO.java:73:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLVariableDAO.java:75:	System.err.println is used
+src/principal/dao/mysql/MySQLVariableDAO.java:76:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLVariableDAO.java:82:	Parameter 'objet' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLVariableDAO.java:82:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLVariableDAO.java:83:	Found 'DD'-anomaly for variable 'req' (lines '83'-'87').
+src/principal/dao/mysql/MySQLVariableDAO.java:84:	Found 'DD'-anomaly for variable 'nbligne' (lines '84'-'91').
+src/principal/dao/mysql/MySQLVariableDAO.java:90:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLVariableDAO.java:91:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLVariableDAO.java:93:	System.err.println is used
+src/principal/dao/mysql/MySQLVariableDAO.java:94:	Potential violation of Law of Demeter (object not created locally)
+src/principal/dao/mysql/MySQLVariableDAO.java:100:	Parameter 'libelle' is not assigned and could be declared final
+src/principal/dao/mysql/MySQLVariableDAO.java:100:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLVariableDAO.java:101:	Found 'DD'-anomaly for variable 'req' (lines '101'-'106').
+src/principal/dao/mysql/MySQLVariableDAO.java:102:	Always check the return of one of the navigation method (next,previous,first,last) of a ResultSet.
+src/principal/dao/mysql/MySQLVariableDAO.java:102:	Found 'DD'-anomaly for variable 'res' (lines '102'-'109').
+src/principal/dao/mysql/MySQLVariableDAO.java:103:	Found 'DD'-anomaly for variable 'variable' (lines '103'-'111').
+src/principal/dao/mysql/MySQLVariableDAO.java:113:	System.err.println is used
+src/principal/dao/mysql/MySQLVariableDAO.java:119:	publicMethodCommentRequirement Required
+src/principal/dao/mysql/MySQLVariableDAO.java:120:	Singleton is not thread safe
+src/principal/modele/metier/Cotisation.java:3:	headerCommentRequirement Required
+src/principal/modele/metier/Cotisation.java:5:	Avoid variables with short names like id
+src/principal/modele/metier/Cotisation.java:5:	fieldCommentRequirement Required
+src/principal/modele/metier/Cotisation.java:6:	fieldCommentRequirement Required
+src/principal/modele/metier/Cotisation.java:7:	fieldCommentRequirement Required
+src/principal/modele/metier/Cotisation.java:9:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Cotisation.java:13:	Parameter 'lib' is not assigned and could be declared final
+src/principal/modele/metier/Cotisation.java:13:	Parameter 'taux' is not assigned and could be declared final
+src/principal/modele/metier/Cotisation.java:13:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Cotisation.java:17:	Avoid variables with short names like id
+src/principal/modele/metier/Cotisation.java:17:	Parameter 'id' is not assigned and could be declared final
+src/principal/modele/metier/Cotisation.java:17:	Parameter 'libelle' is not assigned and could be declared final
+src/principal/modele/metier/Cotisation.java:17:	Parameter 'taux' is not assigned and could be declared final
+src/principal/modele/metier/Cotisation.java:17:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Cotisation.java:23:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Cotisation.java:27:	Avoid variables with short names like id
+src/principal/modele/metier/Cotisation.java:27:	Parameter 'id' is not assigned and could be declared final
+src/principal/modele/metier/Cotisation.java:27:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Cotisation.java:31:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Cotisation.java:35:	Parameter 'libelle' is not assigned and could be declared final
+src/principal/modele/metier/Cotisation.java:35:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Cotisation.java:39:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Cotisation.java:43:	Parameter 'taux' is not assigned and could be declared final
+src/principal/modele/metier/Cotisation.java:43:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Cotisation.java:48:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Cotisation.java:54:	Avoid variables with short names like o
+src/principal/modele/metier/Cotisation.java:54:	Ensure you override both equals() and hashCode()
+src/principal/modele/metier/Cotisation.java:54:	Parameter 'o' is not assigned and could be declared final
+src/principal/modele/metier/Cotisation.java:54:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Cotisation.java:57:	Local variable 'cot' could be declared final
+src/principal/modele/metier/Cotisation.java:58:	Potential violation of Law of Demeter (object not created locally)
+src/principal/modele/metier/Cotisation.java:59:	A method should have only one exit point, and that should be the last statement in the method
+src/principal/modele/metier/Employe.java:6:	headerCommentRequirement Required
+src/principal/modele/metier/Employe.java:8:	Avoid variables with short names like id
+src/principal/modele/metier/Employe.java:8:	fieldCommentRequirement Required
+src/principal/modele/metier/Employe.java:9:	fieldCommentRequirement Required
+src/principal/modele/metier/Employe.java:10:	fieldCommentRequirement Required
+src/principal/modele/metier/Employe.java:11:	fieldCommentRequirement Required
+src/principal/modele/metier/Employe.java:12:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/principal/modele/metier/Employe.java:12:	Avoid using redundant field initializer for 'regles'
+src/principal/modele/metier/Employe.java:12:	fieldCommentRequirement Required
+src/principal/modele/metier/Employe.java:13:	Avoid using implementation types like 'HashMap'; use the interface instead
+src/principal/modele/metier/Employe.java:13:	Avoid using redundant field initializer for 'variables'
+src/principal/modele/metier/Employe.java:13:	fieldCommentRequirement Required
+src/principal/modele/metier/Employe.java:15:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Employe.java:19:	Parameter 'adresse' is not assigned and could be declared final
+src/principal/modele/metier/Employe.java:19:	Parameter 'nom' is not assigned and could be declared final
+src/principal/modele/metier/Employe.java:19:	Parameter 'prenom' is not assigned and could be declared final
+src/principal/modele/metier/Employe.java:19:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Employe.java:23:	Avoid variables with short names like id
+src/principal/modele/metier/Employe.java:23:	Parameter 'adresse' is not assigned and could be declared final
+src/principal/modele/metier/Employe.java:23:	Parameter 'id' is not assigned and could be declared final
+src/principal/modele/metier/Employe.java:23:	Parameter 'nom' is not assigned and could be declared final
+src/principal/modele/metier/Employe.java:23:	Parameter 'prenom' is not assigned and could be declared final
+src/principal/modele/metier/Employe.java:23:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Employe.java:28:	Avoid variables with short names like id
+src/principal/modele/metier/Employe.java:28:	Parameter 'adresse' is not assigned and could be declared final
+src/principal/modele/metier/Employe.java:28:	Parameter 'id' is not assigned and could be declared final
+src/principal/modele/metier/Employe.java:28:	Parameter 'nom' is not assigned and could be declared final
+src/principal/modele/metier/Employe.java:28:	Parameter 'prenom' is not assigned and could be declared final
+src/principal/modele/metier/Employe.java:28:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Employe.java:29:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/principal/modele/metier/Employe.java:29:	Avoid using implementation types like 'HashMap'; use the interface instead
+src/principal/modele/metier/Employe.java:29:	Parameter 'possede' is not assigned and could be declared final
+src/principal/modele/metier/Employe.java:29:	Parameter 'regles' is not assigned and could be declared final
+src/principal/modele/metier/Employe.java:38:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Employe.java:42:	Avoid variables with short names like id
+src/principal/modele/metier/Employe.java:42:	Parameter 'id' is not assigned and could be declared final
+src/principal/modele/metier/Employe.java:42:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Employe.java:46:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Employe.java:50:	Parameter 'nom' is not assigned and could be declared final
+src/principal/modele/metier/Employe.java:50:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Employe.java:54:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Employe.java:58:	Parameter 'prenom' is not assigned and could be declared final
+src/principal/modele/metier/Employe.java:58:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Employe.java:62:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Employe.java:66:	Parameter 'adresse' is not assigned and could be declared final
+src/principal/modele/metier/Employe.java:66:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Employe.java:70:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/principal/modele/metier/Employe.java:70:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Employe.java:74:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/principal/modele/metier/Employe.java:74:	Parameter 'regles' is not assigned and could be declared final
+src/principal/modele/metier/Employe.java:74:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Employe.java:78:	Avoid using implementation types like 'HashMap'; use the interface instead
+src/principal/modele/metier/Employe.java:78:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Employe.java:82:	Avoid using implementation types like 'HashMap'; use the interface instead
+src/principal/modele/metier/Employe.java:82:	Parameter 'possede' is not assigned and could be declared final
+src/principal/modele/metier/Employe.java:82:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Employe.java:87:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Employe.java:94:	Avoid variables with short names like o
+src/principal/modele/metier/Employe.java:94:	Ensure you override both equals() and hashCode()
+src/principal/modele/metier/Employe.java:94:	Parameter 'o' is not assigned and could be declared final
+src/principal/modele/metier/Employe.java:94:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Employe.java:97:	Local variable 'emp' could be declared final
+src/principal/modele/metier/Employe.java:98:	Potential violation of Law of Demeter (object not created locally)
+src/principal/modele/metier/Employe.java:99:	A method should have only one exit point, and that should be the last statement in the method
+src/principal/modele/metier/Regle.java:3:	headerCommentRequirement Required
+src/principal/modele/metier/Regle.java:5:	Avoid variables with short names like id
+src/principal/modele/metier/Regle.java:5:	fieldCommentRequirement Required
+src/principal/modele/metier/Regle.java:6:	fieldCommentRequirement Required
+src/principal/modele/metier/Regle.java:7:	fieldCommentRequirement Required
+src/principal/modele/metier/Regle.java:8:	fieldCommentRequirement Required
+src/principal/modele/metier/Regle.java:10:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Regle.java:13:	Parameter 'actif' is not assigned and could be declared final
+src/principal/modele/metier/Regle.java:13:	Parameter 'action' is not assigned and could be declared final
+src/principal/modele/metier/Regle.java:13:	Parameter 'condition' is not assigned and could be declared final
+src/principal/modele/metier/Regle.java:13:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Regle.java:18:	Avoid variables with short names like id
+src/principal/modele/metier/Regle.java:18:	Parameter 'actif' is not assigned and could be declared final
+src/principal/modele/metier/Regle.java:18:	Parameter 'action' is not assigned and could be declared final
+src/principal/modele/metier/Regle.java:18:	Parameter 'condition' is not assigned and could be declared final
+src/principal/modele/metier/Regle.java:18:	Parameter 'id' is not assigned and could be declared final
+src/principal/modele/metier/Regle.java:18:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Regle.java:24:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Regle.java:27:	Avoid variables with short names like id
+src/principal/modele/metier/Regle.java:27:	Parameter 'id' is not assigned and could be declared final
+src/principal/modele/metier/Regle.java:27:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Regle.java:30:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Regle.java:33:	Parameter 'condition' is not assigned and could be declared final
+src/principal/modele/metier/Regle.java:33:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Regle.java:36:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Regle.java:39:	Parameter 'action' is not assigned and could be declared final
+src/principal/modele/metier/Regle.java:39:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Regle.java:42:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Regle.java:45:	Parameter 'actif' is not assigned and could be declared final
+src/principal/modele/metier/Regle.java:45:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Regle.java:49:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Regle.java:55:	Avoid variables with short names like o
+src/principal/modele/metier/Regle.java:55:	Ensure you override both equals() and hashCode()
+src/principal/modele/metier/Regle.java:55:	Parameter 'o' is not assigned and could be declared final
+src/principal/modele/metier/Regle.java:55:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Regle.java:58:	Avoid variables with short names like rg
+src/principal/modele/metier/Regle.java:58:	Local variable 'rg' could be declared final
+src/principal/modele/metier/Regle.java:59:	Potential violation of Law of Demeter (object not created locally)
+src/principal/modele/metier/Regle.java:60:	A method should have only one exit point, and that should be the last statement in the method
+src/principal/modele/metier/Variable.java:3:	headerCommentRequirement Required
+src/principal/modele/metier/Variable.java:5:	Avoid variables with short names like id
+src/principal/modele/metier/Variable.java:5:	fieldCommentRequirement Required
+src/principal/modele/metier/Variable.java:6:	fieldCommentRequirement Required
+src/principal/modele/metier/Variable.java:8:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Variable.java:12:	Parameter 'libelle' is not assigned and could be declared final
+src/principal/modele/metier/Variable.java:12:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Variable.java:16:	Avoid variables with short names like id
+src/principal/modele/metier/Variable.java:16:	Parameter 'id' is not assigned and could be declared final
+src/principal/modele/metier/Variable.java:16:	Parameter 'libelle' is not assigned and could be declared final
+src/principal/modele/metier/Variable.java:16:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Variable.java:21:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Variable.java:25:	Avoid variables with short names like id
+src/principal/modele/metier/Variable.java:25:	Parameter 'id' is not assigned and could be declared final
+src/principal/modele/metier/Variable.java:25:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Variable.java:29:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Variable.java:33:	Parameter 'libelle' is not assigned and could be declared final
+src/principal/modele/metier/Variable.java:33:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Variable.java:38:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Variable.java:43:	Avoid variables with short names like o
+src/principal/modele/metier/Variable.java:43:	Ensure you override both equals() and hashCode()
+src/principal/modele/metier/Variable.java:43:	Parameter 'o' is not assigned and could be declared final
+src/principal/modele/metier/Variable.java:43:	publicMethodCommentRequirement Required
+src/principal/modele/metier/Variable.java:46:	Local variable 'var' could be declared final
+src/principal/modele/metier/Variable.java:47:	Potential violation of Law of Demeter (object not created locally)
+src/principal/modele/metier/Variable.java:48:	A method should have only one exit point, and that should be the last statement in the method
