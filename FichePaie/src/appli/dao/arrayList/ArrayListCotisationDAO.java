@@ -45,7 +45,7 @@ public class ArrayListCotisationDAO implements CotisationDAO{
 	public int create(Cotisation objet) {
 		int id = 1;
 		if(!cotisations.isEmpty()){
-			id = (cotisations.get(cotisations.size()-1).getId()+1);
+			id = cotisations.get(cotisations.size()-1).getId()+1;
 		}
 		objet.setId(id);
 		cotisations.add(objet);

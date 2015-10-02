@@ -6,10 +6,15 @@ import appli.modele.metier.Cotisation;
 import appli.modele.metier.Employe;
 import appli.modele.metier.Regle;
 import appli.modele.metier.Variable;
+import appli.modele.services.RegleServices;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {		
+		
+		RegleServices.conditionIsValide(null);
+		 System.exit(0);
+		
 		DAOFactory daof = DAOFactory.getDAOFactory(Persistance.ArrayList);
 		
 		Employe employe1 = new Employe("LAJOUX", "Alexis", "Metz");

@@ -19,32 +19,36 @@ public class Connexion {
     
     public static Connection creerConnexion() {
     		
-    		if(connexion == null)
-    		{
-    			FileInputStream source;
+    		try {
+				if(connexion == null || connexion.isClosed())
+				{
+					FileInputStream source;
 
-                try {
-                        source = new FileInputStream(fconf);
-                        accessBdD.loadFromXML(source);
-                } catch (IOException ioe) {
-                        ioe.printStackTrace();
-                }
+				    try {
+				            source = new FileInputStream(fconf);
+				            accessBdD.loadFromXML(source);
+				    } catch (IOException ioe) {
+				            ioe.printStackTrace();
+				    }
 
-                String url = "jdbc:mysql://" + accessBdD.getProperty("adresse_ip")
-                                + ":" + accessBdD.getProperty("port") + "/"
-                                + accessBdD.getProperty("bdd"); // jdbc:mysql://infodb.iutmetz.univ-lorraine.fr:3306/dinquer1u_java";
-                String user = accessBdD.getProperty("login"); // "dinquer1u_appli";
-                String password = accessBdD.getProperty("pass"); // "alexis57";
+				    String url = "jdbc:mysql://" + accessBdD.getProperty("adresse_ip")
+				                    + ":" + accessBdD.getProperty("port") + "/"
+				                    + accessBdD.getProperty("bdd"); // jdbc:mysql://infodb.iutmetz.univ-lorraine.fr:3306/dinquer1u_java";
+				    String user = accessBdD.getProperty("login"); // "dinquer1u_appli";
+				    String password = accessBdD.getProperty("pass"); // "alexis57";
 
-                Connection maConnexion = null;
+				    Connection maConnexion = null;
 
-                try {
-                        maConnexion = DriverManager.getConnection(url, user, password);
-                } catch (SQLException sqle) {
-                        System.out.println("Erreur de connexion " + sqle.getMessage());
-                }
-                connexion = maConnexion;
-    		}
+				    try {
+				            maConnexion = DriverManager.getConnection(url, user, password);
+				    } catch (SQLException sqle) {
+				            System.out.println("Erreur de connexion " + sqle.getMessage());
+				    }
+				    connexion = maConnexion;
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
     		
     		return connexion;
     	

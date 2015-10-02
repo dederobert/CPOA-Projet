@@ -1,5 +1,8 @@
 package appli.modele.metier;
 
+import appli.modele.services.RegleServices;
+
+
 public class Regle {
 	
 	private int id;
@@ -7,9 +10,20 @@ public class Regle {
 	private String action;
 	private boolean actif;
 	
+	/**
+	 * Constructeur de la class {@link Regle}
+	 */
 	public Regle(){
 		this(-1,"","",false);
 	}
+	
+	/**
+	 * Constructeur de la class {@link Regle}
+	 * avec des champs sans id
+	 * @param condition Conditon de la regle
+	 * @param action Action de la regle
+	 * @param actif 
+	 */
 	public Regle(String condition, String action, boolean actif)
 	{
 		this(-1, condition, action, actif);
@@ -19,8 +33,10 @@ public class Regle {
 		this.setId(id);
 		this.setCondition(condition);
 		this.setAction(action);
-		this.setActif(actif);
+		this.setActif(actif);		
 	}
+	
+	
 	public int getId() {
 		return id;
 	}
@@ -31,12 +47,20 @@ public class Regle {
 		return condition;
 	}
 	public void setCondition(String condition) {
+		if(!RegleServices.conditionIsValide(condition) || condition.trim().length() == 0)
+		{
+			throw new IllegalArgumentException("La condition entré n'est pas valide");
+		}
 		this.condition = condition;
 	}
 	public String getAction() {
 		return action;
 	}
 	public void setAction(String action) {
+		if(!RegleServices.actionIsValide(action) || action.trim().length() == 0)
+		{
+			throw new IllegalArgumentException("L'action entré n'est pas valide");
+		}
 		this.action = action;
 	}
 	public boolean isActif() {
