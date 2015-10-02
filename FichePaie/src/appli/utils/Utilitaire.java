@@ -9,5 +9,26 @@ public class Utilitaire {
 	{
 		return DAOFactory.getDAOFactory(Persistance.ArrayList);
 	}
+	
+	public static boolean isInteger(String value) {
+		try {
+			Integer.parseInt(value);
+		} catch (NumberFormatException exception) {
+			return false;
+		}
+
+		return true;
+	}
+	
+	public static boolean isDouble(String value) {
+		try{
+			Double.parseDouble(value);
+		}catch(NumberFormatException exception)
+		{
+			return false;
+		}
+		
+		return true;
+	}
 
 }

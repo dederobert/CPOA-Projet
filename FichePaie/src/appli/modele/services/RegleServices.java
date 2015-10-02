@@ -9,7 +9,7 @@ import appli.utils.Utilitaire;
  * Class pour les traitements sur les règles
  * 
  * @author alexis
- * @version 1.0
+ * @version 1.1
  */
 public class RegleServices {
 
@@ -20,6 +20,7 @@ public class RegleServices {
 	 * @param regle
 	 *            Règle dont l'action est à vérifier
 	 * @return vraie si l'action est valide
+	 * @throws Exception 
 	 */
 	public static boolean actionIsValide(String action) {
 		String[] champs = action.split(" ");
@@ -29,15 +30,26 @@ public class RegleServices {
 		if (champs.length == 3) {
 			if (cotisation != null) {
 				if (champs[1].equals("=")) {
-					try {
-						Double.parseDouble(champs[3]);
+					if(Utilitaire.isDouble(champs[2]))
+					{
 						return true;
-					} catch (NumberFormatException exception) {
+					}else
+					{
+						System.err.println("Vous n'avez pas entré un taux valide");
 					}
+				}else{
+					System.err.println("Vous devez utiliser un = ");
 				}
+			}else
+			{
+				System.err.println("La cotisation renseigné est inexistante");
 			}
 
+		}else
+		{
+			System.err.println("Le nombre d'argument est invalide");
 		}
+		
 		return false;
 	}
 
@@ -57,16 +69,28 @@ public class RegleServices {
 				Variable variable = daoF.getVariableDAO().getByLibelle(
 						champs[i]);
 				if (variable != null) {
-					if (champs[i + 1] == "<" || champs[i + 1] == "<="
-							|| champs[i + 1] == "=" || champs[i + 1] == ">="
-							|| champs[i + 1] == ">" || champs[i + 1] == "!=") {
+					if (champs[i + 1].equals("<") || champs[i + 1].equals("<=")
+							|| champs[i + 1].equals("=") || champs[i + 1].equals(">=")
+							|| champs[i + 1].equals(">") || champs[i + 1].equals("!=")) {
 						if ((champs[i + 2].startsWith("\"") && champs[i + 2]
-								.endsWith("\"")) || isInteger(champs[i + 2])) {
+								.endsWith("\"")) || Utilitaire.isInteger(champs[i + 2])) {
 							return true;
+						}else
+						{
+							System.err.println("Le format du champs " + champs[i+2] + " est invalide");
 						}
+					}else
+					{
+						System.err.println("Le connecteur " + champs[i+1] + " est invalide !");
 					}
+				}else
+				{
+					System.err.println("La variable " + champs[i] + "n'existe pas !");
 				}
 			}
+		}else
+		{
+			System.err.println("Le nombre de champs ne correspond pas");
 		}
 
 		return false;
@@ -84,14 +108,5 @@ public class RegleServices {
 		return decoupage;
 	}
 
-	private static boolean isInteger(String value) {
-		try {
-			Integer.parseInt(value);
-		} catch (NumberFormatException exception) {
-			return false;
-		}
-
-		return true;
-	}
 
 }
