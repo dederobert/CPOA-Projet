@@ -108,9 +108,7 @@ public class ArrayListCotisationDAO implements CotisationDAO{
 		
 		cotisations.get(cotisations.indexOf(objet)).setLibelle(objet.getLibelle());
 		cotisations.get(cotisations.indexOf(objet)).setTaux(objet.getTaux());
-		
-		System.out.println(cotisations.get(cotisations.indexOf(objet)));
-		
+			
 		return 0;
 	}
 
