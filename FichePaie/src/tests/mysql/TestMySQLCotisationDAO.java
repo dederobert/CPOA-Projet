@@ -49,5 +49,33 @@ public class TestMySQLCotisationDAO {
 		assertEquals(0.8,cotisation2.getTaux(), DELTA );
 	}
 	
+	@Test
+	public void testUpdateLibelle() {
+		Cotisation cotisation = new Cotisation("secu", 0.8);
+		int id = MySQLCotisationDAO.getInstance().create(cotisation);
+		cotisation.setLibelle("test");
+		MySQLCotisationDAO.getInstance().update(cotisation);
+		Cotisation cotisation2 = MySQLCotisationDAO.getInstance().getById(id);
+		assertEquals("test", cotisation2.getLibelle());
+	}
+	
+	@Test
+	public void testUpdateTaux() {
+		Cotisation cotisation = new Cotisation("secu", 0.8);
+		int id = MySQLCotisationDAO.getInstance().create(cotisation);
+		cotisation.setTaux(2);
+		MySQLCotisationDAO.getInstance().update(cotisation);
+		Cotisation cotisation2 = MySQLCotisationDAO.getInstance().getById(id);
+		assertEquals(2, cotisation2.getTaux(), DELTA);
+	}
+	
+	@Test
+	public void testDelete() {
+		Cotisation cotisation = new Cotisation("secu", 0.8);
+		int id = MySQLCotisationDAO.getInstance().create(cotisation);
+		MySQLCotisationDAO.getInstance().delete(cotisation);
+		Cotisation cotisation2 = MySQLCotisationDAO.getInstance().getById(id);
+		assertNull(cotisation2);
+	}
 
 }
