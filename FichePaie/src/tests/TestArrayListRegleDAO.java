@@ -8,7 +8,6 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 import appli.dao.arrayList.ArrayListRegleDAO;
-import appli.modele.metier.Cotisation;
 import appli.modele.metier.Regle;
 
 public class TestArrayListRegleDAO {
@@ -26,20 +25,20 @@ public class TestArrayListRegleDAO {
 	}
 	
 	@Test
-	public void testCreerCotisation() {
+	public void testCreerRegle() {
 		Regle regle = new Regle("satut = \"cadre\"", "", true);
 		ArrayListRegleDAO.getInstance().create(regle);
 		assertTrue(ArrayListRegleDAO.getInstance().getRegles().contains(regle));
 	}
 	
 	@Test
-	public void testGetByIdCotisationNotNull() {
+	public void testGetByIdRegleNotNull() {
 		assertNotNull(ArrayListRegleDAO.getInstance().getById(1));
 	}
 	
 	@Test
-	public void testGetByIdCotisationIsEquals() {
-		assertEquals(new Cotisation(1, "retraite", 0.8), ArrayListRegleDAO.getInstance().getById(1));
+	public void testGetByIdRegleIsEquals() {
+		assertEquals(new Regle(1, "brut = 2000", "", true), ArrayListRegleDAO.getInstance().getById(1));
 	}
 	
 	@Test
