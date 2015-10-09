@@ -1,4 +1,4 @@
-package tests;
+package tests.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -26,7 +26,7 @@ public class TestArrayListRegleDAO {
 	
 	@Test
 	public void testCreerRegle() {
-		Regle regle = new Regle("satut = \"cadre\"", "", true);
+		Regle regle = new Regle("statu = \"cadre\"", "", true);
 		ArrayListRegleDAO.getInstance().create(regle);
 		assertTrue(ArrayListRegleDAO.getInstance().getRegles().contains(regle));
 	}

@@ -16,15 +16,15 @@ public class TestMySQLVariableDAO {
 	
 	@Test
 	public void testCreerVariable(){
-		Variable variable = new Variable("Brute");
+		Variable variable = new Variable("Brut");
 		int id = MySQLVariableDAO.getInstance().create(variable);
 		Variable variable2 = MySQLVariableDAO.getInstance().getById(id);		
-		assertEquals("Brute", variable2.getLibelle());				
+		assertEquals("Brut", variable2.getLibelle());				
 	}
 
 	@Test
 	public void testCreerVariableNotNull(){
-		Variable variable = new Variable("Brute");
+		Variable variable = new Variable("Brut");
 		int id = MySQLVariableDAO.getInstance().create(variable);
 		assertNotNull(id);
 	}
@@ -41,7 +41,7 @@ public class TestMySQLVariableDAO {
 	
 	@Test
 	public void testGetByLibelleNotNull(){
-		assertNotNull(MySQLVariableDAO.getInstance().getByLibelle("Brute"));
+		assertNotNull(MySQLVariableDAO.getInstance().getByLibelle("Brut"));
 	}
 	
 	@Test
@@ -51,15 +51,18 @@ public class TestMySQLVariableDAO {
 	
 	@Test
 	public void testUpdateVariable(){
-		Variable variable = MySQLVariableDAO.getInstance().getById(1);
+		Variable variable = new Variable("Brut");
+		int id = MySQLVariableDAO.getInstance().create(variable);
 		variable.setLibelle("testUpdate");
 		MySQLVariableDAO.getInstance().update(variable);
-		assertEquals(variable.getLibelle(), MySQLVariableDAO.getInstance().getById(1).getLibelle());
+		
+		Variable variable2 = MySQLVariableDAO.getInstance().getById(id);
+		assertEquals(variable2.getLibelle(), MySQLVariableDAO.getInstance().getById(id).getLibelle());
 	}
 	
 	@Test
 	public void testDelete(){
-		Variable variable = new Variable("Brute");
+		Variable variable = new Variable("Brut");
 		int id = MySQLVariableDAO.getInstance().create(variable);
 		MySQLVariableDAO.getInstance().delete(variable);
 		assertNull(MySQLVariableDAO.getInstance().getById(id));

@@ -1,4 +1,4 @@
-package tests;
+package tests.ArrayList;
 
 import static org.junit.Assert.*;
 

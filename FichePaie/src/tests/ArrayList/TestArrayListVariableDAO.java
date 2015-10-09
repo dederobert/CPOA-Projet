@@ -1,4 +1,4 @@
-package tests;
+package tests.ArrayList;
 
 import static org.junit.Assert.*;
 
@@ -30,7 +30,7 @@ public class TestArrayListVariableDAO {
 	
 	@Test
 	public void testGetByLibelleNotNull(){
-		assertNotNull(ArrayListVariableDAO.getInstance().getByLibelle("Brute"));
+		assertNotNull(ArrayListVariableDAO.getInstance().getByLibelle("Brut"));
 	}
 	
 	@Test
@@ -41,7 +41,7 @@ public class TestArrayListVariableDAO {
 	
 	@Test
 	public void testCreerVariable(){
-		Variable variable = new Variable("Brute");
+		Variable variable = new Variable("Brut");
 		ArrayListVariableDAO.getInstance().create(variable);
 		assertTrue(ArrayListVariableDAO.getInstance().getVariables().contains(variable));
 	}

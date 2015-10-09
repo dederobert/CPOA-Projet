@@ -85,7 +85,7 @@ public class RegleServices {
 					}
 				}else
 				{
-					System.err.println("La variable " + champs[i] + "n'existe pas !");
+					System.err.println("La variable " + champs[i] + " n'existe pas !");
 				}
 			}
 		}else
