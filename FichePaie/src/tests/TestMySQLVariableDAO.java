@@ -1,9 +1,10 @@
-package appli.dao.mysql;
+package tests;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import appli.dao.mysql.MySQLVariableDAO;
 import appli.modele.metier.Variable;
 
 public class TestMySQLVariableDAO {
