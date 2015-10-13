@@ -12,6 +12,7 @@ public class Regle {
 	
 	/**
 	 * Constructeur de la class {@link Regle}
+	 * <br> id=-1 condition="", action="", actif=<code>false</code>
 	 */
 	public Regle(){
 		this(-1,"","",false);
@@ -33,7 +34,7 @@ public class Regle {
 	
 	/**
 	 * Constructeur de la class {@link Regle}
-	 * avec des champs sans id
+	 * <br>id = -1
 	 * @param condition Conditon de la regle
 	 * @param action Action de la regle
 	 * @param actif 
@@ -43,6 +44,13 @@ public class Regle {
 		this(-1, condition, action, actif);
 	}
 	
+	/**
+	 * Constructeur de la class {@link Regle}
+	 * @param id identifiant de la regle
+	 * @param condition Conditon de la regle
+	 * @param action Action de la regle
+	 * @param actif 
+	 */
 	public Regle(int id, String condition, String action, boolean actif) {
 		this.setId(id);
 		this.setCondition(condition);
@@ -60,6 +68,14 @@ public class Regle {
 	public String getCondition() {
 		return condition;
 	}
+	
+	/**
+	 * Definie la condition<br>
+	 * Utilise la class {@link RegleServices} pour verifier la validité de la condition
+	 * @see RegleServices
+	 * @param condition condition à definir
+	 * @throws IllegalArgumentException
+	 */
 	public void setCondition(String condition) {
 		if(!RegleServices.conditionIsValide(condition) || condition.trim().length() == 0)
 		{
@@ -70,6 +86,14 @@ public class Regle {
 	public String getAction() {
 		return action;
 	}
+	
+	/**
+	 * Definie l'action<br>
+	 * Utilise la class {@link RegleServices} pour verifier la validité de l'action
+	 * @see RegleServices
+	 * @param action
+	 * @throws IllegalArgumentException
+	 */
 	public void setAction(String action) {
 		if(!RegleServices.actionIsValide(action) || action.trim().length() == 0)
 		{
