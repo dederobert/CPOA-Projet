@@ -12,6 +12,15 @@ public class TestCotisation {
 	public void testConstructeur1NotNull() {
 		assertNotNull(new Cotisation());
 	}
+	
+	@Test
+	public void testConstructeur1Values() {
+		Cotisation cotisation = new Cotisation();
+
+		assertNotNull(cotisation.getId());
+		assertNotNull(cotisation.getLibelle());
+		assertNotNull(cotisation.getTaux());
+	}
 
 	@Test
 	public void testConstructeur2NotNull() {
@@ -22,6 +31,7 @@ public class TestCotisation {
 	public void testConstructeur2Values() {
 		Cotisation cotisation = new Cotisation("secu", 0.8);
 
+		assertNotNull(cotisation.getId());
 		assertEquals("secu", cotisation.getLibelle());
 		assertEquals(0.8, cotisation.getTaux(), 1e-5);
 	}

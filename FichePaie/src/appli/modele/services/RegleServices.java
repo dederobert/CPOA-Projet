@@ -58,6 +58,7 @@ public class RegleServices {
 	 *            Règle dont la condition est à vérifier
 	 * @return Vraie si la condition est valide
 	 */
+	@SuppressWarnings("unused")
 	public static boolean conditionIsValide(String condition) {
 		String[] champs = decoupeCondition(condition);
 		DAOFactory daoF = Utilitaire.getFactory();

@@ -68,7 +68,7 @@ public class TestArrayListRegleDAO {
 	@Test
 	public void testDelete() {
 		Regle regle = new Regle("statu = 'cadre'", "secu = 0.8", true);
-		int id = ArrayListRegleDAO.getInstance().create(regle);
+		ArrayListRegleDAO.getInstance().create(regle);
 		
 		ArrayListRegleDAO.getInstance().delete(regle);
 		assertFalse(ArrayListRegleDAO.getInstance().getRegles().contains(regle));
