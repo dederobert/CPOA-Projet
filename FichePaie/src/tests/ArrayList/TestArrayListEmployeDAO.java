@@ -37,13 +37,16 @@ public class TestArrayListEmployeDAO {
 	
 	@Test
 	public void testGetByNomEmployeIsNotNull(){
-		assertNotNull(ArrayListEmployeDAO.getInstance().getByNom("LAJOUX"));
+		Employe employe = new Employe("BOURGANIESH", "Robert", "toulouse");
+		ArrayListEmployeDAO.getInstance().create(employe);
+		
+		assertNotNull(ArrayListEmployeDAO.getInstance().getByNom("BOURGANIESH"));
 	}
 	
 	
 	@Test
 	public void testCreerEmploye(){
-		Employe employe = new Employe(5, "BOURGANIESH", "Robert", "toulouse");
+		Employe employe = new Employe("BOURGANIESH", "Robert", "toulouse");
 		ArrayListEmployeDAO.getInstance().create(employe);
 		assertTrue(ArrayListEmployeDAO.getInstance().getEmployes().contains(employe));
 	}

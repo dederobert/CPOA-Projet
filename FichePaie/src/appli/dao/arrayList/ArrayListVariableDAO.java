@@ -13,7 +13,7 @@ public class ArrayListVariableDAO implements VariableDAO {
 	private ArrayListVariableDAO() {
 		setVariables(new ArrayList<Variable>());
 		getVariables().add(new Variable(1, "brut"));
-		getVariables().add(new Variable(2, "statut"));
+		getVariables().add(new Variable(2, "statu"));
 		getVariables().add(new Variable(3, "horaire"));
 	}
 

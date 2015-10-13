@@ -35,22 +35,20 @@ public class RegleServices {
 						return true;
 					}else
 					{
-						System.err.println("Vous n'avez pas entré un taux valide");
+						throw new IllegalArgumentException("Vous n'avez pas entré un taux valide");
 					}
 				}else{
-					System.err.println("Vous devez utiliser un = ");
+					throw new IllegalArgumentException("Vous devez utiliser un = ");
 				}
 			}else
 			{
-				System.err.println("La cotisation renseigné est inexistante");
+				throw new IllegalArgumentException("La cotisation renseigné est inexistante");
 			}
 
 		}else
 		{
-			System.err.println("Le nombre d'argument est invalide");
+			throw new IllegalArgumentException("Le nombre d'argument est invalide");
 		}
-		
-		return false;
 	}
 
 	/**
@@ -72,25 +70,25 @@ public class RegleServices {
 					if (champs[i + 1].equals("<") || champs[i + 1].equals("<=")
 							|| champs[i + 1].equals("=") || champs[i + 1].equals(">=")
 							|| champs[i + 1].equals(">") || champs[i + 1].equals("!=")) {
-						if ((champs[i + 2].startsWith("\"") && champs[i + 2]
-								.endsWith("\"")) || Utilitaire.isInteger(champs[i + 2])) {
+						if ((champs[i + 2].startsWith("'") && champs[i + 2]
+								.endsWith("'")) || Utilitaire.isInteger(champs[i + 2])) {
 							return true;
 						}else
 						{
-							System.err.println("Le format du champs " + champs[i+2] + " est invalide");
+							throw new IllegalArgumentException("Le format du champs " + champs[i+2] + " est invalide");
 						}
 					}else
 					{
-						System.err.println("Le connecteur " + champs[i+1] + " est invalide !");
+						throw new IllegalArgumentException("Le connecteur " + champs[i+1] + " est invalide !");
 					}
 				}else
 				{
-					System.err.println("La variable " + champs[i] + " n'existe pas !");
+					throw new IllegalArgumentException("La variable " + champs[i] + " n'existe pas !");
 				}
 			}
 		}else
 		{
-			System.err.println("Le nombre de champs ne correspond pas");
+			throw new IllegalArgumentException("Le nombre de champs ne correspond pas");
 		}
 
 		return false;

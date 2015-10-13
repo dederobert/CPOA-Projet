@@ -19,6 +19,20 @@ public class Regle {
 	
 	/**
 	 * Constructeur de la class {@link Regle}
+	 * Elle est principalement utiliser dans les <b>GetById</b><br />
+	 * <i>N'est pas affecter par le test des champs action et condition </i>
+	 * @param id Permet de definir un id
+	 */
+	public Regle(int id)
+	{
+		this.setId(id);
+		this.condition = "";
+		this.action = "";
+		this.actif = false;
+	}
+	
+	/**
+	 * Constructeur de la class {@link Regle}
 	 * avec des champs sans id
 	 * @param condition Conditon de la regle
 	 * @param action Action de la regle

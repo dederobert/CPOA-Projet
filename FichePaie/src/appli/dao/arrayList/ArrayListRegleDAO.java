@@ -28,9 +28,15 @@ public class ArrayListRegleDAO implements RegleDAO{
 	 */
 	private ArrayListRegleDAO() {
 		setRegles(new ArrayList<Regle>());
-		getRegles().add(new Regle(1, "brut < 2500", "secu = 2", true));
-		getRegles().add(new Regle(2, "statu = \"cadre\"", "secu = 7", false));
-		getRegles().add(new Regle(3, "brut > 1500", "secu = 0.5", true));
+		try{
+			getRegles().add(new Regle(1, "brut < 2500", "secu = 2", true));
+			getRegles().add(new Regle(2, "statu = 'cadre'", "secu = 7", false));
+			getRegles().add(new Regle(3, "brut > 1500", "secu = 0.5", true));
+		}catch(IllegalArgumentException e)
+		{
+			System.err.println("Problème d'initialisation de l'arrayList Regle");
+		}
+		
 	}
 
 	/**
@@ -41,7 +47,7 @@ public class ArrayListRegleDAO implements RegleDAO{
 	 */
 	@Override
 	public Regle getById(int id) {
-		Regle regle = new Regle(id, "", "", false);
+		Regle regle = new Regle(id);
 		int index = regles.indexOf(regle);
 		regle = (index!=-1)?regles.get(index):null;
 		return regle;

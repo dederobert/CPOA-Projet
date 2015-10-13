@@ -26,7 +26,7 @@ public class TestArrayListRegleDAO {
 	
 	@Test
 	public void testCreerRegle() {
-		Regle regle = new Regle("statu = \"cadre\"", "", true);
+		Regle regle = new Regle("statu = 'cadre'", "secu = 0.8", true);
 		ArrayListRegleDAO.getInstance().create(regle);
 		assertTrue(ArrayListRegleDAO.getInstance().getRegles().contains(regle));
 	}
@@ -38,7 +38,13 @@ public class TestArrayListRegleDAO {
 	
 	@Test
 	public void testGetByIdRegleIsEquals() {
-		assertEquals(new Regle(1, "brut = 2000", "", true), ArrayListRegleDAO.getInstance().getById(1));
+		Regle regle = new Regle("statu = 'cadre'", "secu = 0.8", true);
+		int id = ArrayListRegleDAO.getInstance().create(regle);
+		Regle regle2 = ArrayListRegleDAO.getInstance().getById(id);
+		
+		assertEquals("statu = 'cadre'", regle2.getCondition());
+		assertEquals("secu = 0.8", regle2.getAction());
+		assertTrue(regle2.isActif());
 	}
 	
 	@Test
@@ -53,7 +59,7 @@ public class TestArrayListRegleDAO {
 	@Test
 	public void testUpdateAction() {
 		Regle regle = ArrayListRegleDAO.getInstance().getById(1);
-		regle.setAction("");
+		regle.setAction("secu = 0.8");
 		ArrayListRegleDAO.getInstance().update(regle);
 		
 		assertEquals(regle.getAction(), ArrayListRegleDAO.getInstance().getById(1).getAction());
@@ -61,7 +67,9 @@ public class TestArrayListRegleDAO {
 	
 	@Test
 	public void testDelete() {
-		Regle regle = new Regle(4, "", "test", false);
+		Regle regle = new Regle("statu = 'cadre'", "secu = 0.8", true);
+		int id = ArrayListRegleDAO.getInstance().create(regle);
+		
 		ArrayListRegleDAO.getInstance().delete(regle);
 		assertFalse(ArrayListRegleDAO.getInstance().getRegles().contains(regle));
 	}

@@ -25,7 +25,14 @@ public class TestArrayListVariableDAO {
 	
 	@Test
 	public void testGetByIdVariable(){
-		assertEquals(new Variable("Statu"), ArrayListVariableDAO.getInstance().getById(1));
+		Variable variable = new Variable("workspace");
+		int id = ArrayListVariableDAO.getInstance().create(variable);
+		Variable variable2 = ArrayListVariableDAO.getInstance().getById(id);
+		
+		assertEquals(variable.getLibelle(), variable2.getLibelle());
+		assertEquals(id, variable2.getId());
+		
+		ArrayListVariableDAO.getInstance().delete(variable);
 	}
 	
 	@Test
@@ -34,8 +41,15 @@ public class TestArrayListVariableDAO {
 	}
 	
 	@Test
-	public void testGetByLibelleIsSame(){
-		assertEquals(new Variable("Statu"), ArrayListVariableDAO.getInstance().getByLibelle("Statu"));
+	public void testGetByLibelleEquals(){
+		Variable variable = new Variable("workspace");
+		int id = ArrayListVariableDAO.getInstance().create(variable);
+		Variable variable2 = ArrayListVariableDAO.getInstance().getByLibelle("workspace");
+		
+		assertEquals(id, variable2.getId());
+		assertEquals(variable.getLibelle(), variable2.getLibelle());
+		
+		ArrayListVariableDAO.getInstance().delete(variable);
 	}
 	
 	
