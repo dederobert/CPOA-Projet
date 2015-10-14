@@ -29,6 +29,8 @@ public class MySQLVariableDAO implements VariableDAO {
 			res = req.executeQuery();
 			res.next();
 			variable = new Variable(res.getInt(1), res.getString(2));
+		
+			
 		} catch (SQLException sqle) {
 			System.err.println("Erreur lors de l'execution de la requete : "
 					+ sqle.getMessage());
@@ -44,7 +46,7 @@ public class MySQLVariableDAO implements VariableDAO {
 
 		try {
 			req = this.connexion.prepareStatement(
-					"INSERT INTO VARIALBE (id_var, lib_var) VALUES (NULL, ?)",
+					"INSERT INTO VARIABLE (id_var, lib_var) VALUES (NULL, ?)",
 					Statement.RETURN_GENERATED_KEYS);
 			req.setString(1, objet.getLibelle());
 			req.executeUpdate();

@@ -12,10 +12,14 @@ public class Regle {
 	
 	/**
 	 * Constructeur de la class {@link Regle}
+	 * <br>N'oppère pas de vérification sur les champs
 	 * <br> id=-1 condition="", action="", actif=<code>false</code>
 	 */
 	public Regle(){
-		this(-1,"","",false);
+		this.id = -1;
+		this.condition = "";
+		this.action = "";
+		this.actif = false;
 	}
 	
 	/**

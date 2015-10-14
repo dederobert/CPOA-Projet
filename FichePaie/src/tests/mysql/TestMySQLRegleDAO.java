@@ -16,7 +16,7 @@ public class TestMySQLRegleDAO {
 	
 	@Test
 	public void testCreerRegleIdNotNull(){
-		Regle regle = new Regle("brut = 1200", "", true);
+		Regle regle = new Regle("brut = 1200", "secu = 0.5", true);
 		int id = MySQLRegleDAO.getInstance().create(regle);
 		assertNotNull(id);
 	}

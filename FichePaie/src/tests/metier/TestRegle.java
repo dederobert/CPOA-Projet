@@ -10,12 +10,12 @@ import org.junit.Test;
 import appli.modele.metier.Regle;
 
 public class TestRegle {
-	
+
 	@Test
 	public void testConstructeur1NotNull() {
 		assertNotNull(new Regle());
 	}
-	
+
 	@Test
 	public void testConstructeur1Values() {
 		Regle regle = new Regle();
@@ -28,12 +28,12 @@ public class TestRegle {
 
 	@Test
 	public void testConstructeur2NotNull() {
-		assertNotNull(new Regle("brut  = 500", "secu = 0.5", true));
+		assertNotNull(new Regle("brut = 500", "secu = 0.5", true));
 	}
 
 	@Test
 	public void testConstructeur2Values() {
-		Regle regle =  new Regle("brut = 500", "secu = 0.5", true);
+		Regle regle = new Regle("brut = 500", "secu = 0.5", true);
 
 		assertNotNull(regle.getId());
 		assertEquals("brut = 500", regle.getCondition());
@@ -41,37 +41,37 @@ public class TestRegle {
 		assertTrue(regle.isActif());
 	}
 
-	//TODO FINIR
-	
+	// TODO FINIR
+
 	@Test
 	public void testConstructeur3NotNull() {
-		assertNotNull(new Cotisation(2, "secu", 0.8));
+		assertNotNull(new Regle(1, "brut = 500", "secu = 0.5", true));
 	}
 
 	@Test
 	public void testConstructeur3Values() {
-		Cotisation cotisation = new Cotisation(1, "secu", 0.8);
+		Regle regle = new Regle(1, "brut = 500", "secu = 0.5", true);
 
-		assertEquals(1, cotisation.getId());
-		assertEquals("secu", cotisation.getLibelle());
-		assertEquals(0.8, cotisation.getTaux(), 1e-5);
+		assertEquals(1, regle.getId());
+		assertEquals("brut = 500", regle.getCondition());
+		assertEquals("secu = 0.5", regle.getAction());
+		assertTrue(regle.isActif());
 	}
 
 	@Test
 	public void testEquals() {
-		Cotisation cotisation = new Cotisation(1, "secu", 0.8);
-		Cotisation cotisation2 = new Cotisation(1, "secu", 0.8);
+		Regle regle = new Regle(1, "brut = 500", "secu = 0.5", true);
+		Regle regle2 = new Regle(1, "brut = 500", "secu = 0.5", true);
 
-		assertTrue(cotisation.equals(cotisation2));
+		assertTrue(regle.equals(regle2));
 
 	}
 
 	@Test
 	public void testEqualsFalse() {
-		Cotisation cotisation = new Cotisation(1, "secu", 0.8);
-		Cotisation cotisation2 = new Cotisation(5, "truc", 5);
+		Regle regle = new Regle(1, "brut = 500", "secu = 0.5", true);
+		Regle regle2 = new Regle(15, "brut = 87", "secu = 0.5", false);
 
-		assertFalse(cotisation.equals(cotisation2));
-
+		assertFalse(regle.equals(regle2));
 	}
 }

@@ -35,7 +35,12 @@ public class RegleServiceTest {
 	
 	@Test
 	public void testConditionIsValideBadVariable() {
+		try{
 		assertFalse(RegleServices.conditionIsValide("truc = \"cadre\""));
+		}catch(IllegalArgumentException e)
+		{
+			
+		}
 	}
 	
 	@Test

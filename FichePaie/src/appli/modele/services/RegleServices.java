@@ -59,7 +59,7 @@ public class RegleServices {
 	 * @return Vraie si la condition est valide
 	 */
 	@SuppressWarnings("unused")
-	public static boolean conditionIsValide(String condition) {
+	public static boolean conditionIsValide(String condition) throws IllegalArgumentException{
 		String[] champs = decoupeCondition(condition);
 		DAOFactory daoF = Utilitaire.getFactory();
 
