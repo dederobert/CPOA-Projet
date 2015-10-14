@@ -42,7 +42,7 @@ public class TestMySQLVariableDAO {
 		Variable variable = new Variable("Brut");
 		int id = MySQLVariableDAO.getInstance().create(variable);
 		
-		assertEquals(new Variable("Brut"),MySQLVariableDAO.getInstance().getById(id));
+		assertEquals("Brut",MySQLVariableDAO.getInstance().getById(id).getLibelle());
 	}
 	
 	@Test
@@ -52,7 +52,7 @@ public class TestMySQLVariableDAO {
 	
 	@Test
 	public void testGetByLibelleIsSame(){
-		assertEquals(new Variable("Statu"), MySQLVariableDAO.getInstance().getByLibelle("Statu"));
+		assertEquals("statu", MySQLVariableDAO.getInstance().getByLibelle("statu").getLibelle());
 	}
 	
 	@Test

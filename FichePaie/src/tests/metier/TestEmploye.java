@@ -45,7 +45,7 @@ public class TestEmploye {
 		assertNotNull(employe.getId());
 		assertEquals("LAJOUX", employe.getNom());
 		assertEquals("Alexis", employe.getPrenom());
-		assertEquals("Metz", employe.getAdresse());
+		assertEquals("METZ", employe.getAdresse());
 		assertNotNull(employe.getRegles());
 		assertNotNull(employe.getVariables());
 

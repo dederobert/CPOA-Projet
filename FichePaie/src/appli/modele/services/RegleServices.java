@@ -20,9 +20,9 @@ public class RegleServices {
 	 * @param regle
 	 *            Règle dont l'action est à vérifier
 	 * @return vraie si l'action est valide
-	 * @throws Exception 
+	 * @throws IllegalArgumentException
 	 */
-	public static boolean actionIsValide(String action) {
+	public static boolean actionIsValide(String action) throws IllegalArgumentException{
 		String[] champs = action.split(" ");
 		DAOFactory daof = Utilitaire.getFactory();
 		Cotisation cotisation = daof.getCotisationDAO().getByLibelle(champs[0]);
@@ -57,6 +57,7 @@ public class RegleServices {
 	 * @param regle
 	 *            Règle dont la condition est à vérifier
 	 * @return Vraie si la condition est valide
+	 * @throws IllegalArgumentException
 	 */
 	@SuppressWarnings("unused")
 	public static boolean conditionIsValide(String condition) throws IllegalArgumentException{

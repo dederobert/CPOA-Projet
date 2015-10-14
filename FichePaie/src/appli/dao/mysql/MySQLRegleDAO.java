@@ -32,7 +32,7 @@ public class MySQLRegleDAO implements RegleDAO {
 			regle = new Regle(res.getInt(1), res.getString(2),
 					res.getString(3), res.getBoolean(4));
 		} catch (SQLException sqle) {
-			System.err.println("Impossible de selectionner la regle :"
+			System.err.println(this.getClass() + " Impossible de selectionner la regle :"
 					+ sqle.getMessage());
 		}
 
@@ -58,7 +58,7 @@ public class MySQLRegleDAO implements RegleDAO {
 			res.next();
 			key = res.getInt(1);
 		} catch (SQLException sqle) {
-			System.err.println("Impossible de creer la regle :"
+			System.err.println(this.getClass() + " Impossible de creer la regle :"
 					+ sqle.getMessage());
 		}
 		objet.setId(key);
@@ -79,7 +79,7 @@ public class MySQLRegleDAO implements RegleDAO {
 			req.setInt(4, objet.getId());
 			nbLine = req.executeUpdate();
 		} catch (SQLException sqle) {
-			System.err.println("Impossible de mettre a jour la regle :"
+			System.err.println(this.getClass() + " Impossible de mettre a jour la regle :"
 					+ sqle.getMessage());
 		}
 		return nbLine;
@@ -95,7 +95,7 @@ public class MySQLRegleDAO implements RegleDAO {
 			req.setInt(1, objet.getId());
 			nbLine = req.executeUpdate();
 		} catch (SQLException sqle) {
-			System.err.println("Imossible de supprimer la regle :"
+			System.err.println(this.getClass() + " Imossible de supprimer la regle :"
 					+ sqle.getMessage());
 		}
 		return nbLine;

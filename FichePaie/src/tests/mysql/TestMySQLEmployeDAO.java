@@ -16,20 +16,31 @@ public class TestMySQLEmployeDAO {
 
 	@Test
 	public void testGetByIdEmployeNotNull() {
-		assertNotNull(MySQLEmployeDAO.getInstance().getById(1));
+		Employe employe = new Employe(5, "BOURGANIESH", "Robert", "toulouse");
+		int id = MySQLEmployeDAO.getInstance().create(employe);
+		
+		assertNotNull(MySQLEmployeDAO.getInstance().getById(id));
 	}
 
 	@Test
 	public void testGetByIdEmploye() {
-		assertEquals(new Employe(1, "LAJOUX", "Alexis", "metz"),
-				MySQLEmployeDAO.getInstance().getById(1));
+		Employe employe = new Employe(5, "BOURGANIESH", "Robert", "toulouse");
+		int id = MySQLEmployeDAO.getInstance().create(employe);
+
+		assertEquals(employe, MySQLEmployeDAO.getInstance().getById(id));
 	}
 
 	@Test
 	public void testGetByNomEmploye() {
 		Employe employe = new Employe(5, "BOURGANIESH", "Robert", "toulouse");
 		MySQLEmployeDAO.getInstance().create(employe);
-		assertEquals(employe, MySQLEmployeDAO.getInstance().getByNom("BOURGANIESH"));
+
+		assertEquals(employe.getNom(),
+				MySQLEmployeDAO.getInstance().getByNom("BOURGANIESH").getNom());
+		assertEquals(employe.getPrenom(), MySQLEmployeDAO.getInstance()
+				.getByNom("BOURGANIESH").getPrenom());
+		assertEquals(employe.getAdresse(), MySQLEmployeDAO.getInstance()
+				.getByNom("BOURGANIESH").getAdresse());
 	}
 
 	@Test
@@ -39,13 +50,13 @@ public class TestMySQLEmployeDAO {
 
 	@Test
 	public void testCreerEmploye() {
-		Employe employe = new Employe(5, "BOURGANIESH", "Robert", "toulouse");
+		Employe employe = new Employe("BOURGANIESH", "Robert", "toulouse");
 		int id = MySQLEmployeDAO.getInstance().create(employe);
 		Employe employe2 = MySQLEmployeDAO.getInstance().getById(id);
-		assertEquals(5, employe2.getId());
+
 		assertEquals("BOURGANIESH", employe2.getNom());
 		assertEquals("Robert", employe2.getPrenom());
-		assertEquals("toulourse", employe2.getAdresse());
+		assertEquals("toulouse", employe2.getAdresse());
 	}
 
 	@Test
@@ -61,8 +72,8 @@ public class TestMySQLEmployeDAO {
 		int id = MySQLEmployeDAO.getInstance().create(employe);
 		employe.setNom("BOURGANIESH");
 		MySQLEmployeDAO.getInstance().update(employe);
-		assertEquals(employe.getNom(), MySQLEmployeDAO.getInstance().getById(id)
-				.getNom());
+		assertEquals(employe.getNom(), MySQLEmployeDAO.getInstance()
+				.getById(id).getNom());
 	}
 
 	@Test
@@ -84,12 +95,12 @@ public class TestMySQLEmployeDAO {
 		assertEquals(employe.getAdresse(), MySQLEmployeDAO.getInstance()
 				.getById(id).getAdresse());
 	}
-	
+
 	@Test
-	public void testDeleteEmploye(){
+	public void testDeleteEmploye() {
 		Employe employe = new Employe(5, "BOURGANIESH", "Robert", "toulouse");
 		int id = MySQLEmployeDAO.getInstance().create(employe);
 		MySQLEmployeDAO.getInstance().delete(employe);
-		assertNull(MySQLEmployeDAO.getInstance().getById(id));	
+		assertNull(MySQLEmployeDAO.getInstance().getById(id));
 	}
 }

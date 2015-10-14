@@ -37,7 +37,7 @@ public class MySQLEmployeDAO implements EmployeDAO {
                         employe = new Employe(res.getInt(1), res.getString(2),
                                         res.getString(3), res.getString(4));
                 } catch (SQLException sqle) {
-                        System.err.println("Impossible de selectionner l'employe :"
+                        System.err.println(this.getClass() + " Impossible de selectionner l'employe :"
                                         + sqle.getMessage());
                 }
                 return employe;
@@ -60,7 +60,7 @@ public class MySQLEmployeDAO implements EmployeDAO {
                         res.next();
                         key = res.getInt(1);
                 } catch (SQLException sqle) {
-                        System.err.println("Impossible de creer l'employe :"
+                        System.err.println(this.getClass() + " Impossible de creer l'employe :"
                                         + sqle.getMessage());
                 }
                 objet.setId(key);
@@ -81,7 +81,7 @@ public class MySQLEmployeDAO implements EmployeDAO {
                         req.setInt(4, objet.getId());
                         nbLigne = req.executeUpdate();
                 } catch (SQLException sqle) {
-                        System.err.println("Impossible de mettre a jour l'employe :"
+                        System.err.println(this.getClass() + " Impossible de mettre a jour l'employe :"
                                         + sqle.getMessage());
                 }
                 return nbLigne;
@@ -97,7 +97,7 @@ public class MySQLEmployeDAO implements EmployeDAO {
                         req.setInt(1, objet.getId());
                         nbLine = req.executeUpdate();
                 } catch (SQLException sqle) {
-                        System.err.println("Imossible de supprimer l'employe :"
+                        System.err.println(this.getClass() + " Imossible de supprimer l'employe :"
                                         + sqle.getMessage());
                 }
                 return nbLine;
@@ -119,7 +119,7 @@ public class MySQLEmployeDAO implements EmployeDAO {
                         employe = new Employe(res.getInt(1), res.getString(2),
                                         res.getString(3), res.getString(4));
                 } catch (SQLException sqle) {
-                        System.err.println("Impossible de selectionner l'employe :"
+                        System.err.println(this.getClass() + " Impossible de selectionner l'employe :"
                                         + sqle.getMessage());
                 }
                 return employe;
@@ -144,7 +144,7 @@ public class MySQLEmployeDAO implements EmployeDAO {
                         }
                         employe.setRegles(regles);
                 } catch (SQLException sqle) {
-                        System.err.println("Impossible de selectioner les regles : "
+                        System.err.println(this.getClass() + " Impossible de selectioner les regles : "
                                         + sqle.getMessage());
                 }
                 return employe.getRegles();
@@ -170,7 +170,7 @@ public class MySQLEmployeDAO implements EmployeDAO {
 
                         employe.setVariables(vars);
                 } catch (SQLException sqle) {
-                        System.err.println("Impossible de selectioner les variables : "
+                        System.err.println(this.getClass() + " Impossible de selectioner les variables : "
                                         + sqle.getMessage());
                 }
 
@@ -194,7 +194,7 @@ public class MySQLEmployeDAO implements EmployeDAO {
                         requete.executeUpdate();
                 }catch(SQLException sqle)
                 {
-                        System.err.println("Impossible d'ajouter la regle : "+sqle.getMessage());
+                        System.err.println(this.getClass() + " Impossible d'ajouter la regle : "+sqle.getMessage());
                 }
                 employe.getRegles().add(regle);                
         }
@@ -210,7 +210,7 @@ public class MySQLEmployeDAO implements EmployeDAO {
                         requete.executeUpdate();
                 }catch(SQLException sqle)
                 {
-                        System.err.println("Impossible d'ajouter la variable : "+sqle.getMessage());
+                        System.err.println(this.getClass() + " Impossible d'ajouter la variable : "+sqle.getMessage());
                 }
                 employe.getVariables().put(variable, valeur);        
                 
@@ -226,7 +226,7 @@ public class MySQLEmployeDAO implements EmployeDAO {
                         requete.executeUpdate();
                 }catch(SQLException sqle)
                 {
-                        System.err.println("Impossible de retirer la regle : "+sqle.getMessage());
+                        System.err.println(this.getClass() + " Impossible de retirer la regle : "+sqle.getMessage());
                 }
                 employe.getRegles().remove(regle);
                 
@@ -242,7 +242,7 @@ public class MySQLEmployeDAO implements EmployeDAO {
                         requete.executeUpdate();
                 }catch(SQLException sqle)
                 {
-                        System.err.println("Impossible de retirer la variable : "+sqle.getMessage());
+                        System.err.println(this.getClass() + " Impossible de retirer la variable : "+sqle.getMessage());
                 }
                 employe.getVariables().remove(variable);
                 

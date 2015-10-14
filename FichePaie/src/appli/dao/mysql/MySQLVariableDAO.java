@@ -32,7 +32,7 @@ public class MySQLVariableDAO implements VariableDAO {
 		
 			
 		} catch (SQLException sqle) {
-			System.err.println("Erreur lors de l'execution de la requete : "
+			System.err.println(this.getClass() + " Erreur lors de l'execution de la requete : "
 					+ sqle.getMessage());
 		}
 		return variable;
@@ -54,7 +54,7 @@ public class MySQLVariableDAO implements VariableDAO {
 			res.next();
 			key = res.getInt(1);
 		} catch (SQLException sqle) {
-			System.err.println("Erreur lors de l'execution de la requete : "
+			System.err.println(this.getClass() + " Erreur lors de l'execution de la requete : "
 					+ sqle.getMessage());
 		}
 		objet.setId(key);
@@ -74,7 +74,7 @@ public class MySQLVariableDAO implements VariableDAO {
 			req.setInt(2, objet.getId());
 			nbligne = req.executeUpdate();
 		} catch (SQLException sqle) {
-			System.err.println("Erreur lors de l'execution de la requete : "
+			System.err.println(this.getClass() + " Erreur lors de l'execution de la requete : "
 					+ sqle.getMessage());
 		}
 		return nbligne;
@@ -92,7 +92,7 @@ public class MySQLVariableDAO implements VariableDAO {
 			req.setInt(1, objet.getId());
 			nbligne = req.executeUpdate();
 		} catch (SQLException sqle) {
-			System.err.println("Erreur lors de l'execution de la requete : "
+			System.err.println(this.getClass() + " Erreur lors de l'execution de la requete : "
 					+ sqle.getMessage());
 		}
 		return nbligne;
@@ -112,7 +112,7 @@ public class MySQLVariableDAO implements VariableDAO {
 			res.next();
 			variable = new Variable(res.getInt(1), res.getString(2));
 		} catch (SQLException sqle) {
-			System.err.println("Erreur lors de l'execution de la requete : "
+			System.err.println(this.getClass() + " Erreur lors de l'execution de la requete : "
 					+ sqle.getMessage());
 		}
 		return variable;

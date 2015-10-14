@@ -31,7 +31,7 @@ public class MySQLCotisationDAO implements CotisationDAO {
                         cotisation = new Cotisation(res.getInt(1), res.getString(2),
                                         res.getDouble(3));
                 } catch (SQLException sqle) {
-                        System.err.println("Erreur lors de l'execution de la requete : "
+                        System.err.println(this.getClass() + " Erreur lors de l'execution de la requete : "
                                         + sqle.getMessage());
                 }
                 return cotisation;
@@ -55,7 +55,7 @@ public class MySQLCotisationDAO implements CotisationDAO {
                         res.next();
                         key = res.getInt(1);
                 } catch (SQLException sqle) {
-                        System.err.println("Erreur lors de l'execution de la requete : "
+                        System.err.println(this.getClass() + " Erreur lors de l'execution de la requete : "
                                         + sqle.getMessage());
                 }
                 objet.setId(key);
@@ -77,7 +77,7 @@ public class MySQLCotisationDAO implements CotisationDAO {
                         req.setInt(3, objet.getId());
                         nbligne = req.executeUpdate();
                 } catch (SQLException sqle) {
-                        System.err.println("Erreur lors de l'execution de la requete : "
+                        System.err.println(this.getClass() + " Erreur lors de l'execution de la requete : "
                                         + sqle.getMessage());
                 }
                 return nbligne;
@@ -96,7 +96,7 @@ public class MySQLCotisationDAO implements CotisationDAO {
                         req.setInt(1, objet.getId());
                         nbligne = req.executeUpdate();
                 } catch (SQLException sqle) {
-                        System.err.println("Erreur lors de l'execution de la requete : "
+                        System.err.println(this.getClass() + " Erreur lors de l'execution de la requete : "
                                         + sqle.getMessage());
                 }
                 return nbligne;
@@ -117,7 +117,7 @@ public class MySQLCotisationDAO implements CotisationDAO {
                         cotisation = new Cotisation(res.getInt(1), res.getString(2),
                                         res.getDouble(3));
                 } catch (SQLException sqle) {
-                        System.err.println("Erreur lors de l'execution de la requete : "
+                        System.err.println(this.getClass() + " Erreur lors de l'execution de la requete : "
                                         + sqle.getMessage());
                 }
                 return cotisation;
