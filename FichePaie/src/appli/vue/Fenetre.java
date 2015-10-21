@@ -4,6 +4,7 @@ import javax.swing.JFrame;
 
 import appli.controleur.Controleur;
 import appli.vue.panels.MainPanel;
+import appli.vue.panels.PanelWelcome;
 
 public class Fenetre extends JFrame implements IVue {
 	
@@ -18,7 +19,7 @@ public class Fenetre extends JFrame implements IVue {
 		MainPanel mainPanel = new MainPanel();
 		mainPanel.setCentrePanel(new PanelWelcome());
 		
-		this.add(new MainPanel());
+		this.add(mainPanel);
 		
 		setVisible(true);
 	}

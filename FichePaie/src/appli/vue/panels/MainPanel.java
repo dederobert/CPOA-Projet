@@ -13,9 +13,9 @@ public class MainPanel extends JPanel{
 
 	private static final long serialVersionUID = 8879537991506742304L;
 	
-	private JPanel topMenuPanel = null;
-	private JPanel rightPanel = null;
-	private JPanel centrePanel = null;
+	private JPanel topMenuPanel = new JPanel();
+	private JPanel rightPanel = new JPanel();
+	private JPanel centrePanel = new JPanel();
 	
 	public MainPanel() {
 		this.setBackground(Color.WHITE);
@@ -74,6 +74,9 @@ public class MainPanel extends JPanel{
 
 	public void setCentrePanel(JPanel centrePanel) {
 		this.centrePanel = centrePanel;
+		this.revalidate();
+		this.repaint();
+		
 	}
 
 }
