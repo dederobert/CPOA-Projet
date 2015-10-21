@@ -1,5 +1,7 @@
 package appli.vue.panels;
 
+import java.awt.GridLayout;
+
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
@@ -11,8 +13,9 @@ public class MainPanel extends JPanel{
 	private static final long serialVersionUID = 8879537991506742304L;
 	
 	public MainPanel() {
-		
+		this.setLayout(new GridLayout(2,0));
 		this.add(creerMenu());
+		this.add(new PanelAjoutEmploye());
 	}
 	
 	public JMenuBar creerMenu(){
