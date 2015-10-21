@@ -15,6 +15,9 @@ public class Fenetre extends JFrame implements IVue {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 		
+		MainPanel mainPanel = new MainPanel();
+		mainPanel.setCentrePanel(new PanelWelcome());
+		
 		this.add(new MainPanel());
 		
 		setVisible(true);

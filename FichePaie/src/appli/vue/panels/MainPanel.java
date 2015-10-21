@@ -1,6 +1,7 @@
 package appli.vue.panels;
 
-import java.awt.GridLayout;
+import java.awt.BorderLayout;
+import java.awt.Color;
 
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
@@ -12,10 +13,18 @@ public class MainPanel extends JPanel{
 
 	private static final long serialVersionUID = 8879537991506742304L;
 	
+	private JPanel topMenuPanel = null;
+	private JPanel rightPanel = null;
+	private JPanel centrePanel = null;
+	
 	public MainPanel() {
-		this.setLayout(new GridLayout(2,0));
-		this.add(creerMenu());
-		this.add(new PanelAjoutEmploye());
+		this.setBackground(Color.WHITE);
+		this.setLayout(new BorderLayout());
+		
+		this.add(topMenuPanel, BorderLayout.NORTH);
+		this.add(rightPanel, BorderLayout.WEST);
+		this.add(centrePanel, BorderLayout.CENTER);
+		
 	}
 	
 	public JMenuBar creerMenu(){
@@ -41,6 +50,30 @@ public class MainPanel extends JPanel{
 		menuBar.add(menuEdition);
 			
 		return menuBar;
+	}
+
+	public JPanel getTopMenuPanel() {
+		return topMenuPanel;
+	}
+
+	public void setTopMenuPanel(JPanel topMenuPanel) {
+		this.topMenuPanel = topMenuPanel;
+	}
+
+	public JPanel getRightPanel() {
+		return rightPanel;
+	}
+
+	public void setRightPanel(JPanel rightPanel) {
+		this.rightPanel = rightPanel;
+	}
+
+	public JPanel getCentrePanel() {
+		return centrePanel;
+	}
+
+	public void setCentrePanel(JPanel centrePanel) {
+		this.centrePanel = centrePanel;
 	}
 
 }
