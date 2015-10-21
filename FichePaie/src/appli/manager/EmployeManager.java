@@ -7,8 +7,16 @@ import appli.utils.Utilitaire;
 
 public class EmployeManager {
 	
+	static ArrayList<Employe> employes;
+	
 	public static ArrayList<Employe> getAllEmploye(){
-		return Utilitaire.getFactory().getEmployeDAO().getAllEmploye();
+		employes = Utilitaire.getFactory().getEmployeDAO().getAllEmploye();
+		return employes;
+	}
+
+	public static Employe getEmploye(int selectedIndex) {
+		return employes.get(selectedIndex);
+		
 	}
 
 }

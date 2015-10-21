@@ -161,9 +161,11 @@ public class Employe {
 
 		@Override
 		public String toString() {
-			return "Employe [id=" + id + ", nom=" + nom + ", prenom=" + prenom
+			/*return "Employe [id=" + id + ", nom=" + nom + ", prenom=" + prenom
 					+ ", adresse=" + adresse + ", regles=" + regles
 					+ ", possede=" + variables + "]";
+		*/
+			return nom+" "+prenom+" "+adresse;
 		}
 		
 		@Override

@@ -4,38 +4,49 @@ import javax.swing.JFrame;
 
 import appli.controleur.Controleur;
 import appli.vue.panels.MainPanel;
-import appli.vue.panels.PanelListEmploye;
+import appli.vue.panels.PanelDetails;
 import appli.vue.panels.PanelMenu;
 import appli.vue.panels.PanelWelcome;
 
 public class Fenetre extends JFrame implements IVue {
 	
-	private Controleur controleur;
-
+	private static Controleur controleur;
+	private MainPanel mainPanel;
+	
 	public Fenetre(Controleur controleur) {
-		this.setControleur(controleur);
+		setControleur(controleur);
 		setSize(1024, 512);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 		
-		MainPanel mainPanel = new MainPanel();
+		mainPanel = new MainPanel();
 		mainPanel.setCentrePanel(new PanelWelcome());
-		mainPanel.setRightPanel(new PanelListEmploye());
 		
 		this.add(mainPanel);
 		this.setJMenuBar(new PanelMenu().menuBar);
 		setVisible(true);
 	}
 
-	public Controleur getControleur() {
+	public static Controleur getControleur() {
 		return controleur;
 	}
 
-	public void setControleur(Controleur controleur) {
-		this.controleur = controleur;
+	public static void setControleur(Controleur controleur) {
+		Fenetre.controleur = controleur;
 	}
 
 	private static final long serialVersionUID = 1L;
+
+	@Override
+	public int getSelectedIndex() {
+		return mainPanel.getSelectedIndex();
+	}
+
+	@Override
+	public void changeCentrePanel(PanelDetails panelDetails) {
+		mainPanel.setCentrePanel(panelDetails);		
+	}
+
 	
 	
 	

@@ -13,7 +13,7 @@ public class PanelDetails extends JPanel{
 	private JLabel adresse = new JLabel();
 
 	public PanelDetails() {
-		this.setLayout(new GridLayout(2,4));
+		this.setLayout(new GridLayout(4,2));
 		this.add(new JLabel("Nom : "));
 		this.add(nom);
 		this.add(new JLabel("Prenom : "));
