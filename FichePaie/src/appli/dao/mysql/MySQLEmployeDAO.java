@@ -248,4 +248,22 @@ public class MySQLEmployeDAO implements EmployeDAO {
                 
         }
 
+		@Override
+		public ArrayList<Employe> getAllEmploye() {
+			ArrayList<Employe> employes = new ArrayList<Employe>();
+			PreparedStatement requete = null;
+			ResultSet resultat = null;
+			try{
+				requete = connexion.prepareStatement("SELECT id_emp, nom_emp, prenom_emp, ad_emp FROM EMPLOYE");
+				resultat = requete.executeQuery();
+				while(resultat.next()){
+					employes.add(new Employe(resultat.getInt(1),resultat.getString(2),resultat.getString(3),resultat.getString(4)));
+				}
+			}
+			catch(SQLException sqle){
+				 System.err.println(this.getClass() + " Impossible d'obtenir tous les Employés : "+sqle.getMessage());
+			}
+			return employes;
+		}
+
 }

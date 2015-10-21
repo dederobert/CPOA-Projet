@@ -4,6 +4,7 @@ import javax.swing.JFrame;
 
 import appli.controleur.Controleur;
 import appli.vue.panels.MainPanel;
+import appli.vue.panels.PanelListEmploye;
 import appli.vue.panels.PanelMenu;
 import appli.vue.panels.PanelWelcome;
 
@@ -19,6 +20,7 @@ public class Fenetre extends JFrame implements IVue {
 		
 		MainPanel mainPanel = new MainPanel();
 		mainPanel.setCentrePanel(new PanelWelcome());
+		mainPanel.setRightPanel(new PanelListEmploye());
 		
 		this.add(mainPanel);
 		this.setJMenuBar(new PanelMenu().menuBar);

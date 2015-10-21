@@ -8,7 +8,7 @@ public class PanelWelcome extends JPanel{
 	private static final long serialVersionUID = 1L;
 
 	public PanelWelcome() {
-		this.add(new JLabel("Bienvenu !"));
+		this.add(new JLabel("Bienvenue !"));
 	}
 
 }

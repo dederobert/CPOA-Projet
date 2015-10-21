@@ -19,4 +19,5 @@ public interface EmployeDAO extends DAO<Employe> {
         public void addVariable(Employe employe, Variable variable, String valeur);
 		public void removeRegle(Employe employe, Regle regle);
 		public void removeVariable(Employe employe, Variable variable, String valeur);
+		public ArrayList<Employe> getAllEmploye();
 }

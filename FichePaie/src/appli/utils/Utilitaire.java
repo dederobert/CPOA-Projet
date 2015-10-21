@@ -7,7 +7,7 @@ public class Utilitaire {
 	
 	public static DAOFactory getFactory()
 	{
-		return DAOFactory.getDAOFactory(Persistance.MySQL);
+		return DAOFactory.getDAOFactory(Persistance.ArrayList);
 	}
 	
 	public static boolean isInteger(String value) {

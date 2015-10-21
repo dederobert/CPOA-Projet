@@ -209,4 +209,9 @@ public class ArrayListEmployeDAO implements EmployeDAO {
 		employe.getVariables().remove(variable);
 	}
 
+	@Override
+	public ArrayList<Employe> getAllEmploye() {
+		return getEmployes();
+	}
+
 }
