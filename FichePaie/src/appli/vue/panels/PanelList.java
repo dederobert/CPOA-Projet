@@ -45,6 +45,8 @@ public class PanelList extends JPanel{
 		JPanel buttons = new JPanel();
 		buttons.setLayout(new GridLayout(1,3));
 		JButton ajoutButton = new JButton("Ajouter");
+		ajoutButton.setActionCommand("showAddEmploye");
+		ajoutButton.addActionListener(Fenetre.getControleur());
 		buttons.add(ajoutButton);
 		buttons.add(new JButton("Modifier"));
 		buttons.add(new JButton("Supprimer"));

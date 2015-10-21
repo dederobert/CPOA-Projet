@@ -9,7 +9,9 @@ import javax.swing.event.ListSelectionListener;
 
 import appli.manager.EmployeManager;
 import appli.modele.metier.Employe;
+import appli.utils.Utilitaire;
 import appli.vue.IVue;
+import appli.vue.panels.PanelAjoutEmploye;
 import appli.vue.panels.PanelDetails;
 
 public class Controleur implements ActionListener, ListSelectionListener {
@@ -17,9 +19,20 @@ public class Controleur implements ActionListener, ListSelectionListener {
 	private IVue vue;
 
 	@Override
-	public void actionPerformed(ActionEvent arg0) {
-		// TODO Auto-generated method stub
-
+	public void actionPerformed(ActionEvent event) {
+		switch (event.getActionCommand()) {
+		case "addEmploye":
+			Employe employe = new Employe(vue.getNomEmp(), vue.getPrenomEmp(), vue.getAdresseEmp());
+			Utilitaire.getFactory().getEmployeDAO().create(employe);
+			break;
+		case "showAddEmploye":
+			PanelAjoutEmploye panelAjout = new PanelAjoutEmploye();
+			vue.changeCentrePanel(panelAjout);
+			break;
+		default:
+			break;
+		}
+		
 	}
 
 	public IVue getVue() {
@@ -31,8 +44,8 @@ public class Controleur implements ActionListener, ListSelectionListener {
 	}
 
 	@Override
-	public void valueChanged(ListSelectionEvent e) {
-		if (e.getValueIsAdjusting() == false)
+	public void valueChanged(ListSelectionEvent event) {
+		if (event.getValueIsAdjusting() == false)
 		{
 			if (vue.getSelectedIndex() != -1)
 			{

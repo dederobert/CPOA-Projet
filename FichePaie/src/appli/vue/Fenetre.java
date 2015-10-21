@@ -1,10 +1,11 @@
 package appli.vue;
 
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 import appli.controleur.Controleur;
 import appli.vue.panels.MainPanel;
-import appli.vue.panels.PanelDetails;
+import appli.vue.panels.PanelAjoutEmploye;
 import appli.vue.panels.PanelMenu;
 import appli.vue.panels.PanelWelcome;
 
@@ -43,8 +44,23 @@ public class Fenetre extends JFrame implements IVue {
 	}
 
 	@Override
-	public void changeCentrePanel(PanelDetails panelDetails) {
+	public void changeCentrePanel(JPanel panelDetails) {
 		mainPanel.setCentrePanel(panelDetails);		
+	}
+
+	@Override
+	public String getNomEmp() {
+		return PanelAjoutEmploye.getNom().getText();
+	}
+
+	@Override
+	public String getPrenomEmp() {
+		return PanelAjoutEmploye.getPrenom().getText();
+	}
+
+	@Override
+	public String getAdresseEmp() {
+		return PanelAjoutEmploye.getAdresse().getText();
 	}
 
 	
