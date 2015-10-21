@@ -3,6 +3,7 @@ package appli.vue;
 import javax.swing.JFrame;
 
 import appli.controleur.Controleur;
+import appli.vue.panels.MainPanel;
 
 public class Fenetre extends JFrame implements IVue {
 	
@@ -10,9 +11,12 @@ public class Fenetre extends JFrame implements IVue {
 
 	public Fenetre(Controleur controleur) {
 		this.setControleur(controleur);
-		
+		setSize(1024, 512);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
+		
+		this.add(new MainPanel());
+		
 		setVisible(true);
 	}
 
