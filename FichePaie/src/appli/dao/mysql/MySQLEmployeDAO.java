@@ -254,7 +254,7 @@ public class MySQLEmployeDAO implements EmployeDAO {
 			PreparedStatement requete = null;
 			ResultSet resultat = null;
 			try{
-				requete = connexion.prepareStatement("SELECT id_emp, nom_emp, prenom_emp, ad_emp FROM EMPLOYE");
+				requete = connexion.prepareStatement("SELECT id_emp, nom_emp, prenom_emp, ad_emp FROM EMPLOYE order by nom_emp");
 				resultat = requete.executeQuery();
 				while(resultat.next()){
 					Employe employe = new Employe(resultat.getInt(1),resultat.getString(2),resultat.getString(3),resultat.getString(4));

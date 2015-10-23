@@ -13,6 +13,7 @@ import appli.utils.Utilitaire;
 import appli.vue.IVue;
 import appli.vue.panels.PanelAjoutEmploye;
 import appli.vue.panels.PanelDetails;
+import appli.vue.panels.PanelModificationEmploye;
 
 public class Controleur implements ActionListener, ListSelectionListener {
 	
@@ -31,6 +32,35 @@ public class Controleur implements ActionListener, ListSelectionListener {
 		case "showAddEmploye":
 			PanelAjoutEmploye panelAjout = new PanelAjoutEmploye();
 			vue.changeCentrePanel(panelAjout);
+			break;
+		case "modifierEmploye":
+			Employe employe1 = EmployeManager.getEmploye(vue.getSelectedIndex());
+			employe1.setNom(vue.getNomEmp());
+			employe1.setPrenom(vue.getPrenomEmp());
+			employe1.setAdresse(vue.getAdresseEmp());
+			Utilitaire.getFactory().getEmployeDAO().update(employe1);
+			vue.refresh();
+			vue.changeCentrePanel(null);
+			break;
+		case "showModifierEmploye":
+			if(vue.getSelectedIndex()!=-1)
+			{
+				Employe employe11 = EmployeManager.getEmploye(vue.getSelectedIndex());
+				PanelModificationEmploye panelModif = new PanelModificationEmploye();
+				panelModif.setNom(employe11.getNom());
+				panelModif.setPrenom(employe11.getPrenom());
+				panelModif.setAdresse(employe11.getAdresse());
+				vue.changeCentrePanel(panelModif);
+			}
+			break;
+		case "supprimerEmploye":
+			if(vue.getSelectedIndex()!=-1)
+			{
+				Employe employe11 = EmployeManager.getEmploye(vue.getSelectedIndex());
+				Utilitaire.getFactory().getEmployeDAO().delete(employe11);
+				vue.refresh();
+				vue.changeCentrePanel(null);
+			}			
 			break;
 		default:
 			break;

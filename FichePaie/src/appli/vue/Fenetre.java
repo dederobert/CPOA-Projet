@@ -4,8 +4,8 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import appli.controleur.Controleur;
+import appli.vue.panels.EmployeModif;
 import appli.vue.panels.MainPanel;
-import appli.vue.panels.PanelAjoutEmploye;
 import appli.vue.panels.PanelMenu;
 import appli.vue.panels.PanelWelcome;
 
@@ -50,17 +50,17 @@ public class Fenetre extends JFrame implements IVue {
 
 	@Override
 	public String getNomEmp() {
-		return PanelAjoutEmploye.getNom().getText();
+		return ((EmployeModif) mainPanel.getCentrePanel()).getNom();
 	}
 
 	@Override
 	public String getPrenomEmp() {
-		return PanelAjoutEmploye.getPrenom().getText();
+		return ((EmployeModif) mainPanel.getCentrePanel()).getPrenom();
 	}
 
 	@Override
 	public String getAdresseEmp() {
-		return PanelAjoutEmploye.getAdresse().getText();
+		return ((EmployeModif) mainPanel.getCentrePanel()).getAdresse();
 	}
 
 	@Override
