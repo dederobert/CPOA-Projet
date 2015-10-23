@@ -10,7 +10,7 @@ public class Utilitaire {
 	public static DAOFactory getFactory()
 	{
 		if(factory == null){
-			factory = DAOFactory.getDAOFactory(Persistance.ArrayList);
+			factory = DAOFactory.getDAOFactory(Persistance.MySQL);
 		}
 		return factory;
 	}

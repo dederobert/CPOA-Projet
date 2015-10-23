@@ -15,7 +15,8 @@ public class PanelMenu{
 	public JMenuBar menuBar = new JMenuBar();
 	static JRadioButtonMenuItem bdd = new JRadioButtonMenuItem("Base de Donnée");
 	static JRadioButtonMenuItem arrayList = new JRadioButtonMenuItem("ArrayList");
-
+	static JMenuItem menuGenerer;
+	
 	public PanelMenu(Controleur controleur) {
 		MenuBarControleur menuControleur = new MenuBarControleur(controleur);
 		JMenu menuFichier = new JMenu("Fichier");
@@ -47,8 +48,9 @@ public class PanelMenu{
 			
 		JMenu menuEdition = new JMenu("Edition");
 		JMenu menuFichePai = new JMenu("Fiche de paie");
-			JMenuItem menuGenerer = new JMenuItem("Generer");
+			menuGenerer = new JMenuItem("Generer");
 			menuGenerer.setActionCommand("generer");
+			setGenererEnable(false);
 			menuGenerer.addActionListener(menuControleur);
 		
 		menuSaveOption.add(bdd);
@@ -74,5 +76,10 @@ public class PanelMenu{
 			bdd.setSelected(true);
 			arrayList.setSelected(false);
 		}	
+	}
+
+	public static void setGenererEnable(boolean etat) {
+		menuGenerer.setEnabled(etat);
+		
 	}
 }

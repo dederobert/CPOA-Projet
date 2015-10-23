@@ -2,10 +2,13 @@ package appli.vue.panels;
 
 import java.awt.GridLayout;
 
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+
+import appli.vue.Fenetre;
 
 @SuppressWarnings("unused")
 public class PanelDetails extends JPanel {
@@ -36,6 +39,12 @@ public class PanelDetails extends JPanel {
 		this.add(spRegle);
 		spVariable = new JScrollPane();
 		this.add(spVariable);
+		/*JButton fichePaie = new JButton("Generer fiche de paie");
+		fichePaie.setActionCommand("generer");
+		fichePaie.addActionListener(Fenetre.getControleur());
+		JPanel bouton = new JPanel();
+		bouton.add(fichePaie);
+		this.add(bouton);*/
 	}
 
 	public void setNom(String nom) {

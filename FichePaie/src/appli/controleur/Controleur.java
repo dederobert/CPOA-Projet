@@ -14,6 +14,7 @@ import appli.utils.Utilitaire;
 import appli.vue.IVue;
 import appli.vue.panels.PanelAjoutEmploye;
 import appli.vue.panels.PanelDetails;
+import appli.vue.panels.PanelMenu;
 import appli.vue.panels.PanelModificationEmploye;
 
 public class Controleur implements ActionListener, ListSelectionListener {
@@ -88,11 +89,12 @@ public class Controleur implements ActionListener, ListSelectionListener {
 									"erreur", JOptionPane.ERROR_MESSAGE);
 					break;
 				}
-				employe = new Employe(nom, prenom, adresse);
+				employe = EmployeManager.getEmploye(vue.getSelectedIndex());
 				employe.setNom(vue.getNomEmp());
 				employe.setPrenom(vue.getPrenomEmp());
 				employe.setAdresse(vue.getAdresseEmp());
 				Utilitaire.getFactory().getEmployeDAO().update(employe);
+				
 				vue.refresh();
 				vue.changeCentrePanel(null);
 			}
@@ -146,6 +148,9 @@ public class Controleur implements ActionListener, ListSelectionListener {
 	public void valueChanged(ListSelectionEvent event) {
 		if (event.getValueIsAdjusting() == false) {
 			if (vue.getSelectedIndex() != -1) {
+				
+				PanelMenu.setGenererEnable(true);
+				
 				PanelDetails panelDetails = new PanelDetails();
 				Employe employe = EmployeManager.getEmploye(vue
 						.getSelectedIndex());

@@ -7,7 +7,10 @@ import javax.swing.JOptionPane;
 
 import appli.dao.factory.Persistance;
 import appli.dao.mysql.Connexion;
+import appli.manager.EmployeManager;
+import appli.modele.metier.Employe;
 import appli.utils.Utilitaire;
+import appli.vue.FichePaie;
 import appli.vue.panels.PanelMenu;
 
 public class MenuBarControleur implements ActionListener {
@@ -45,9 +48,13 @@ public class MenuBarControleur implements ActionListener {
 			controleur.getVue().refresh();
 			controleur.getVue().changeCentrePanel(null);
 			break;
+		case "generer":
+			Employe employe = EmployeManager.getEmploye(controleur.getVue()
+					.getSelectedIndex());
+			FichePaie fichePaie = new FichePaie(employe.getNom(), employe.getPrenom());
+			break;
 		default : break;
 		}
 	}
-
 
 }
