@@ -22,19 +22,34 @@ public class Controleur implements ActionListener, ListSelectionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent event) {
+		String nom;
+		String prenom;
+		String adresse;
+		Employe employe;
+		JOptionPane jop;
 		switch (event.getActionCommand()) {
 		case "addEmploye":
-			Employe employe = new Employe(vue.getNomEmp(), vue.getPrenomEmp(),
-					vue.getAdresseEmp());
+			nom = vue.getNomEmp();
+			prenom = vue.getPrenomEmp();
+			adresse = vue.getAdresseEmp();
+
+			if (nom.isEmpty() || prenom.isEmpty() || adresse.isEmpty()
+					|| nom == null || prenom == null || adresse == null) {
+				JOptionPane.showMessageDialog(null,
+						"Attention il vous faut remplir tout les champs !!",
+						"erreur", JOptionPane.ERROR_MESSAGE);
+				break;
+			}
+			employe = new Employe(nom, prenom, adresse);
 			Utilitaire.getFactory().getEmployeDAO().create(employe);
 			EmployeManager.refresh();
 			vue.refresh();
 			vue.changeCentrePanel(null);
 			break;
 		case "recherche":
-			Employe employe2 = Utilitaire.getFactory().getEmployeDAO().getByNom(vue.getTextRecherche());
-			if(employe2==null)
-			{
+			Employe employe2 = Utilitaire.getFactory().getEmployeDAO()
+					.getByNom(vue.getTextRecherche());
+			if (employe2 == null) {
 				vue.changeCentrePanel(null);
 				break;
 			}
@@ -49,14 +64,38 @@ public class Controleur implements ActionListener, ListSelectionListener {
 			vue.changeCentrePanel(panelAjout);
 			break;
 		case "modifierEmploye":
-			Employe employe1 = EmployeManager
-					.getEmploye(vue.getSelectedIndex());
-			employe1.setNom(vue.getNomEmp());
-			employe1.setPrenom(vue.getPrenomEmp());
-			employe1.setAdresse(vue.getAdresseEmp());
-			Utilitaire.getFactory().getEmployeDAO().update(employe1);
-			vue.refresh();
-			vue.changeCentrePanel(null);
+
+			jop = new JOptionPane();
+			@SuppressWarnings("static-access")
+			int option = jop.showConfirmDialog(null,
+					"Voulez-vous vraiment modifier cette employé",
+					"Confirmer modification", JOptionPane.YES_NO_CANCEL_OPTION,
+					JOptionPane.QUESTION_MESSAGE);
+			if (option != JOptionPane.NO_OPTION
+					&& option != JOptionPane.CANCEL_OPTION
+					&& option != JOptionPane.CLOSED_OPTION) {
+
+				nom = vue.getNomEmp();
+				prenom = vue.getPrenomEmp();
+				adresse = vue.getAdresseEmp();
+
+				if (nom.isEmpty() || prenom.isEmpty() || adresse.isEmpty()
+						|| nom == null || prenom == null || adresse == null) {
+					JOptionPane
+							.showMessageDialog(
+									null,
+									"Attention il vous faut remplir tout les champs !!",
+									"erreur", JOptionPane.ERROR_MESSAGE);
+					break;
+				}
+				employe = new Employe(nom, prenom, adresse);
+				employe.setNom(vue.getNomEmp());
+				employe.setPrenom(vue.getPrenomEmp());
+				employe.setAdresse(vue.getAdresseEmp());
+				Utilitaire.getFactory().getEmployeDAO().update(employe);
+				vue.refresh();
+				vue.changeCentrePanel(null);
+			}
 			break;
 		case "showModifierEmploye":
 			if (vue.getSelectedIndex() != -1) {
@@ -71,15 +110,16 @@ public class Controleur implements ActionListener, ListSelectionListener {
 			break;
 		case "supprimerEmploye":
 			if (vue.getSelectedIndex() != -1) {
-				JOptionPane jop = new JOptionPane();
+				jop = new JOptionPane();
 				@SuppressWarnings("static-access")
-				int option = jop.showConfirmDialog(null,
+				int option1 = jop.showConfirmDialog(null,
 						"Voulez-vous vraiment supprimer cette employé",
-						"Quelque chose", JOptionPane.YES_NO_CANCEL_OPTION,
+						"Confirmer suppression",
+						JOptionPane.YES_NO_CANCEL_OPTION,
 						JOptionPane.QUESTION_MESSAGE);
-				if (option != JOptionPane.NO_OPTION
-						&& option != JOptionPane.CANCEL_OPTION
-						&& option != JOptionPane.CLOSED_OPTION) {
+				if (option1 != JOptionPane.NO_OPTION
+						&& option1 != JOptionPane.CANCEL_OPTION
+						&& option1 != JOptionPane.CLOSED_OPTION) {
 					Employe employe11 = EmployeManager.getEmploye(vue
 							.getSelectedIndex());
 					Utilitaire.getFactory().getEmployeDAO().delete(employe11);

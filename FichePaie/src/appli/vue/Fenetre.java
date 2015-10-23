@@ -50,17 +50,17 @@ public class Fenetre extends JFrame implements IVue {
 
 	@Override
 	public String getNomEmp() {
-		return ((EmployeModif) mainPanel.getCentrePanel()).getNom();
+		return ((EmployeModif) mainPanel.getCentrePanel()).getNom().trim();
 	}
 
 	@Override
 	public String getPrenomEmp() {
-		return ((EmployeModif) mainPanel.getCentrePanel()).getPrenom();
+		return ((EmployeModif) mainPanel.getCentrePanel()).getPrenom().trim();
 	}
 
 	@Override
 	public String getAdresseEmp() {
-		return ((EmployeModif) mainPanel.getCentrePanel()).getAdresse();
+		return ((EmployeModif) mainPanel.getCentrePanel()).getAdresse().trim();
 	}
 
 	@Override
