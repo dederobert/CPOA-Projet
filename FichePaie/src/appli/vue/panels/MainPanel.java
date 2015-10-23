@@ -38,8 +38,17 @@ public class MainPanel extends JPanel{
 
 	public void setCentrePanel(JPanel centrePanel) {
 		this.remove(1);
-		this.centrePanel = centrePanel;
-		this.add(centrePanel);
+		
+		if (centrePanel == null)
+		{
+			this.centrePanel = new PanelWelcome();
+			
+		}else{
+			this.centrePanel = centrePanel;
+		}
+		
+		this.add(this.centrePanel);
+		
 		this.validate();
 	}
 
