@@ -57,7 +57,8 @@ public class Controleur implements ActionListener, ListSelectionListener {
 				panelDetails.setNom(employe.getNom());
 				panelDetails.setPrenom(employe.getPrenom());
 				panelDetails.setAdresse(employe.getAdresse());
-				panelDetails.setDonnees(EmployeManager.getRegle(vue.getSelectedIndex()));
+				panelDetails.setRegles(EmployeManager.getRegle(vue.getSelectedIndex()));
+				panelDetails.setVariables(EmployeManager.getVariable(vue.getSelectedIndex()));
 				vue.changeCentrePanel(panelDetails);
 			}
 		}

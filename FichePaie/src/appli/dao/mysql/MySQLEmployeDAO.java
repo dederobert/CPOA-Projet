@@ -132,7 +132,7 @@ public class MySQLEmployeDAO implements EmployeDAO {
                 ArrayList<Regle> regles = new ArrayList<Regle>();
                 try {
                         req = this.connexion
-                                        .prepareStatement("SELECT EMP_REGLE.id_regle, condition, action, actif"
+                                        .prepareStatement("SELECT EMP_REGLE.id_regle, `condition`, action, actif"
                                                         + " FROM EMP_REGLE LEFT JOIN REGLE"
                                                         + " ON EMP_REGLE.id_regle = REGLE.id_regle"
                                                         + " WHERE id_emp = ?");
@@ -257,8 +257,11 @@ public class MySQLEmployeDAO implements EmployeDAO {
 				requete = connexion.prepareStatement("SELECT id_emp, nom_emp, prenom_emp, ad_emp FROM EMPLOYE");
 				resultat = requete.executeQuery();
 				while(resultat.next()){
-					employes.add(new Employe(resultat.getInt(1),resultat.getString(2),resultat.getString(3),resultat.getString(4)));
-				}
+					Employe employe = new Employe(resultat.getInt(1),resultat.getString(2),resultat.getString(3),resultat.getString(4));
+					employe.setRegles(this.getRegles(employe));
+					employe.setVariables(this.getVariables(employe));
+					employes.add(employe);
+					}
 			}
 			catch(SQLException sqle){
 				 System.err.println(this.getClass() + " Impossible d'obtenir tous les Employés : "+sqle.getMessage());
