@@ -26,6 +26,7 @@ public class Controleur implements ActionListener, ListSelectionListener {
 			Utilitaire.getFactory().getEmployeDAO().create(employe);
 			EmployeManager.refresh();
 			vue.refresh();
+			vue.changeCentrePanel(null);
 			break;
 		case "showAddEmploye":
 			PanelAjoutEmploye panelAjout = new PanelAjoutEmploye();
@@ -56,6 +57,7 @@ public class Controleur implements ActionListener, ListSelectionListener {
 				panelDetails.setNom(employe.getNom());
 				panelDetails.setPrenom(employe.getPrenom());
 				panelDetails.setAdresse(employe.getAdresse());
+				panelDetails.setDonnees(EmployeManager.getRegle(vue.getSelectedIndex()));
 				vue.changeCentrePanel(panelDetails);
 			}
 		}

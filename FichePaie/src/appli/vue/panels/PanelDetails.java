@@ -4,6 +4,8 @@ import java.awt.GridLayout;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
 
 public class PanelDetails extends JPanel{
 
@@ -11,16 +13,23 @@ public class PanelDetails extends JPanel{
 	private JLabel nom = new JLabel();
 	private JLabel prenom = new JLabel();
 	private JLabel adresse = new JLabel();
+	private String[][] donnees;
+	private JScrollPane sp;
+	String[] cols = {"Condition","Action"};
 
 	public PanelDetails() {
-		this.setLayout(new GridLayout(4,2));
+		this.setLayout(new GridLayout(6,2));
 		this.add(new JLabel("Nom : "));
 		this.add(nom);
 		this.add(new JLabel("Prenom : "));
 		this.add(prenom);
 		this.add(new JLabel("Adresse : "));
 		this.add(adresse);
+		this.add(new JLabel("Regles : "));
+		this.add(new JLabel("Variable : "));
 		
+		sp = new JScrollPane();
+		this.add(sp);
 	}
 
 	public void setNom(String nom) {
@@ -33,6 +42,17 @@ public class PanelDetails extends JPanel{
 
 	public void setAdresse(String adresse) {
 		this.adresse.setText(adresse);
+	}
+
+	public String[][] getDonnees() {
+		return donnees;
+	}
+
+	public void setDonnees(String[][] donnees) {
+		this.donnees = donnees;
+		JTable tab = new JTable(donnees, cols);
+		sp.setViewportView(tab);
+		this.validate();
 	}
 	
 }
