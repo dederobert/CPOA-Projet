@@ -11,7 +11,9 @@ import appli.dao.mysql.MySQLVariableDAO;
 
 public class MySQLDAOFactory extends DAOFactory{
 	
-	public MySQLDAOFactory() {}
+	public MySQLDAOFactory() {
+		
+	}
 
 	@Override
 	public CotisationDAO getCotisationDAO() {

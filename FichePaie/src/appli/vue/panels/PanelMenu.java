@@ -8,21 +8,29 @@ import javax.swing.JRadioButtonMenuItem;
 
 import appli.controleur.Controleur;
 import appli.controleur.MenuBarControleur;
+import appli.dao.mysql.Connexion;
 
 public class PanelMenu{
 
 	public JMenuBar menuBar = new JMenuBar();
+	static JRadioButtonMenuItem bdd = new JRadioButtonMenuItem("Base de Donnée");
+	static JRadioButtonMenuItem arrayList = new JRadioButtonMenuItem("ArrayList");
 
 	public PanelMenu(Controleur controleur) {
 		MenuBarControleur menuControleur = new MenuBarControleur(controleur);
 		JMenu menuFichier = new JMenu("Fichier");
 		
 			JMenu menuSaveOption = new JMenu("Persistance");
-				JRadioButtonMenuItem bdd = new JRadioButtonMenuItem("Base de Donnée");
+				
 				bdd.setActionCommand("bdd");
 				bdd.addActionListener(menuControleur);
-				bdd.setSelected(true);
-				JRadioButtonMenuItem arrayList = new JRadioButtonMenuItem("ArrayList");
+				try{
+					Connexion.checkConnexion();
+					bdd.setSelected(true);
+				}catch(Exception e){
+					arrayList.setSelected(true);
+				}
+				
 				arrayList.setActionCommand("arrayList");
 				arrayList.addActionListener(menuControleur);
 			ButtonGroup bg = new ButtonGroup();
@@ -54,5 +62,17 @@ public class PanelMenu{
 		menuBar.add(menuFichier);
 		menuBar.add(menuEdition);
 		menuBar.add(menuFichePai);
+	}
+
+	public static void setPersistance(String string) {
+		if(string=="arrayList")
+		{
+			bdd.setSelected(false);
+			arrayList.setSelected(true);
+		}else
+		{
+			bdd.setSelected(true);
+			arrayList.setSelected(false);
+		}	
 	}
 }

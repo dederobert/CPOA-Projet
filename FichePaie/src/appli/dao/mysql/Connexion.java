@@ -51,9 +51,16 @@ public class Connexion {
 			}
     		
     		return connexion;
-    	
     }
 
+    public static void checkConnexion() throws Exception
+    {
+    	if(connexion == null)
+    	{
+    		throw new Exception("La connexion n'est pas valide !");
+    	}
+    }
+    
 	public static Connexion getInstance() {
 		if(instance == null)
 		{
