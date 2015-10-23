@@ -18,5 +18,9 @@ public class EmployeManager {
 		return employes.get(selectedIndex);
 		
 	}
+	
+	public static void refresh() {
+		employes = Utilitaire.getFactory().getEmployeDAO().getAllEmploye();
+	}
 
 }
