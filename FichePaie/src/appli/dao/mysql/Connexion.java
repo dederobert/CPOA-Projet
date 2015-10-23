@@ -55,6 +55,7 @@ public class Connexion {
 
     public static void checkConnexion() throws Exception
     {
+    	creerConnexion();
     	if(connexion == null)
     	{
     		throw new Exception("La connexion n'est pas valide !");
