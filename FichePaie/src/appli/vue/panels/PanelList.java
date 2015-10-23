@@ -54,7 +54,7 @@ public class PanelList extends JPanel{
 		buttons.add(ajoutButton);
 		
 		JButton modifierButton = new JButton("Modifier");
-		modifierButton.setActionCommand("modifierEmploye");
+		modifierButton.setActionCommand("showModifierEmploye");
 		modifierButton.addActionListener(Fenetre.getControleur());
 		buttons.add(modifierButton);
 		
