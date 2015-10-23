@@ -1,5 +1,6 @@
 package appli.vue.panels.employe;
 
+import java.awt.Dimension;
 import java.awt.GridLayout;
 
 import javax.swing.JButton;
@@ -17,14 +18,25 @@ public class PanelModificationEmploye extends JPanel implements EmployeModif{
 	private static JTextField adresse = new JTextField();
 
 	public PanelModificationEmploye() {
-		this.setLayout(new GridLayout(4, 2));
-		this.add(new JLabel("Nom : "));
-		this.add(nom);
-		this.add(new JLabel("Prenom : "));
-		this.add(prenom);
-		this.add(new JLabel("Adresse : "));
-		this.add(adresse);
-
+		this.setLayout(new GridLayout(4, 1));
+		JPanel panel = new JPanel();
+		panel.add(new JLabel("Nom : "));
+		nom.setPreferredSize(new Dimension(150, 30));
+		panel.add(nom);
+		this.add(panel);
+		
+		panel = new JPanel();
+		panel.add(new JLabel("Prenom : "));
+		prenom.setPreferredSize(new Dimension(150, 30));
+		panel.add(prenom);
+		this.add(panel);
+		
+		panel = new JPanel();
+		panel.add(new JLabel("Adresse : "));
+		adresse.setPreferredSize(new Dimension(150, 30));
+		panel.add(adresse);
+		this.add(panel);
+		
 		JPanel pnlButton = new JPanel();
 		JButton button = new JButton("Modifier");
 		button.setActionCommand("modifierEmploye");
