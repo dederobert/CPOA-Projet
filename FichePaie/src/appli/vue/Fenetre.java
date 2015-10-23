@@ -63,6 +63,12 @@ public class Fenetre extends JFrame implements IVue {
 		return PanelAjoutEmploye.getAdresse().getText();
 	}
 
+	@Override
+	public void refresh() {
+		mainPanel.getRightPanel().refresh();
+		
+	}
+
 	
 	
 	

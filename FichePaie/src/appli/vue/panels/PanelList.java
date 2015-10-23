@@ -17,6 +17,8 @@ public class PanelList extends JPanel{
 
 	private static final long serialVersionUID = 1L;
 	private JList<String> list;
+	DefaultListModel<String> listElement = new DefaultListModel<String>();
+	JScrollPane listScroller;
 
 	public PanelList() {
 		
@@ -25,7 +27,7 @@ public class PanelList extends JPanel{
 		rechercher.add(new JTextField("Rechercher"));
 		this.add(rechercher);
 		
-		DefaultListModel<String> listElement = new DefaultListModel<String>();
+		
 		
 		ArrayList<String> listString = Fenetre.getControleur().getList();
 		for(String chaine: listString)
@@ -38,7 +40,7 @@ public class PanelList extends JPanel{
 		list.setLayoutOrientation(JList.VERTICAL);
 		list.addListSelectionListener(Fenetre.getControleur());
 		
-		JScrollPane listScroller = new JScrollPane(list);
+		listScroller = new JScrollPane(list);
 		this.add(listScroller);
 		
 		
@@ -53,7 +55,18 @@ public class PanelList extends JPanel{
 		this.add(buttons);
 	}
 
-	
+	public void refresh() {
+		ArrayList<String> listString = Fenetre.getControleur().getList();
+		listElement.clear();
+		for(String chaine: listString)
+		{
+			listElement.addElement(chaine);
+		}
+		
+		list = new JList<String>(listElement);
+		listScroller = new JScrollPane(list);
+		this.validate();
+	}
 
 	public int getSelectedIndex() {
 		return list.getSelectedIndex();

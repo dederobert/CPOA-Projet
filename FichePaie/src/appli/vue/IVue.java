@@ -14,5 +14,7 @@ public interface IVue {
 
 	public String getAdresseEmp();
 
+	public void refresh();
+
 
 }
