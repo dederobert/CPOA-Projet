@@ -16,5 +16,7 @@ public interface IVue {
 
 	public void refresh();
 
+	public String getTextRecherche();
+
 
 }

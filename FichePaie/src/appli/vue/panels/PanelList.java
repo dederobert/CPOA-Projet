@@ -19,12 +19,16 @@ public class PanelList extends JPanel{
 	private JList<String> list;
 	DefaultListModel<String> listElement = new DefaultListModel<String>();
 	JScrollPane listScroller;
+	JTextField recherche;
 
 	public PanelList() {
 		
 		this.setLayout(new GridLayout(3,1));
 		JPanel rechercher = new JPanel();
-		rechercher.add(new JTextField("Rechercher"));
+		recherche = new JTextField("Rechercher");
+		recherche.setActionCommand("recherche");
+		recherche.addActionListener(Fenetre.getControleur());
+		rechercher.add(recherche);
 		this.add(rechercher);
 		
 		
@@ -80,5 +84,9 @@ public class PanelList extends JPanel{
 
 	public int getSelectedIndex() {
 		return list.getSelectedIndex();
+	}
+
+	public String getTextRecherche() {
+		return recherche.getText().trim();
 	}
 }

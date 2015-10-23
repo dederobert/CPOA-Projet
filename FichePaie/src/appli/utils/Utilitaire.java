@@ -5,9 +5,18 @@ import appli.dao.factory.Persistance;
 
 public class Utilitaire {
 	
+	private static DAOFactory factory = null;
+	
 	public static DAOFactory getFactory()
 	{
-		return DAOFactory.getDAOFactory(Persistance.MySQL);
+		if(factory == null){
+			factory = DAOFactory.getDAOFactory(Persistance.MySQL);
+		}
+		return factory;
+	}
+	
+	public static void setFactory(Persistance persistance){
+		factory = DAOFactory.getDAOFactory(persistance);
 	}
 	
 	public static boolean isInteger(String value) {
@@ -16,6 +25,7 @@ public class Utilitaire {
 		} catch (NumberFormatException exception) {
 			return false;
 		}
+
 
 		return true;
 	}

@@ -31,6 +31,19 @@ public class Controleur implements ActionListener, ListSelectionListener {
 			vue.refresh();
 			vue.changeCentrePanel(null);
 			break;
+		case "recherche":
+			Employe employe2 = Utilitaire.getFactory().getEmployeDAO().getByNom(vue.getTextRecherche());
+			if(employe2==null)
+			{
+				vue.changeCentrePanel(null);
+				break;
+			}
+			PanelModificationEmploye panelModif = new PanelModificationEmploye();
+			panelModif.setNom(employe2.getNom());
+			panelModif.setPrenom(employe2.getPrenom());
+			panelModif.setAdresse(employe2.getAdresse());
+			vue.changeCentrePanel(panelModif);
+			break;
 		case "showAddEmploye":
 			PanelAjoutEmploye panelAjout = new PanelAjoutEmploye();
 			vue.changeCentrePanel(panelAjout);
@@ -49,11 +62,11 @@ public class Controleur implements ActionListener, ListSelectionListener {
 			if (vue.getSelectedIndex() != -1) {
 				Employe employe11 = EmployeManager.getEmploye(vue
 						.getSelectedIndex());
-				PanelModificationEmploye panelModif = new PanelModificationEmploye();
-				panelModif.setNom(employe11.getNom());
-				panelModif.setPrenom(employe11.getPrenom());
-				panelModif.setAdresse(employe11.getAdresse());
-				vue.changeCentrePanel(panelModif);
+				PanelModificationEmploye panelModif1 = new PanelModificationEmploye();
+				panelModif1.setNom(employe11.getNom());
+				panelModif1.setPrenom(employe11.getPrenom());
+				panelModif1.setAdresse(employe11.getAdresse());
+				vue.changeCentrePanel(panelModif1);
 			}
 			break;
 		case "supprimerEmploye":

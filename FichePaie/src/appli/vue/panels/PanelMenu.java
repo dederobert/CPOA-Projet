@@ -19,8 +19,12 @@ public class PanelMenu{
 		
 			JMenu menuSaveOption = new JMenu("Persistance");
 				JRadioButtonMenuItem bdd = new JRadioButtonMenuItem("Base de Donnée");
+				bdd.setActionCommand("bdd");
+				bdd.addActionListener(menuControleur);
 				bdd.setSelected(true);
 				JRadioButtonMenuItem arrayList = new JRadioButtonMenuItem("ArrayList");
+				arrayList.setActionCommand("arrayList");
+				arrayList.addActionListener(menuControleur);
 			ButtonGroup bg = new ButtonGroup();
 				bg.add(bdd);
 				bg.add(arrayList);
@@ -34,7 +38,10 @@ public class PanelMenu{
 			menuFermer.addActionListener(menuControleur);
 			
 		JMenu menuEdition = new JMenu("Edition");
-		
+		JMenu menuFichePai = new JMenu("Fiche de paie");
+			JMenuItem menuGenerer = new JMenuItem("Generer");
+			menuGenerer.setActionCommand("generer");
+			menuGenerer.addActionListener(menuControleur);
 		
 		menuSaveOption.add(bdd);
 		menuSaveOption.add(arrayList);
@@ -42,8 +49,10 @@ public class PanelMenu{
 		menuFichier.add(menuRefresh);
 		menuFichier.addSeparator();
 		menuFichier.add(menuFermer);
+		menuFichePai.add(menuGenerer);
 		
 		menuBar.add(menuFichier);
 		menuBar.add(menuEdition);
+		menuBar.add(menuFichePai);
 	}
 }

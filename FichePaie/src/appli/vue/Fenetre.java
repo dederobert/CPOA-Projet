@@ -69,6 +69,12 @@ public class Fenetre extends JFrame implements IVue {
 		
 	}
 
+	@Override
+	public String getTextRecherche() {
+		return mainPanel.getRightPanel().getTextRecherche();
+		
+	}
+
 	
 	
 	
