@@ -62,9 +62,8 @@ public class PanelList extends JPanel{
 		{
 			listElement.addElement(chaine);
 		}
-		
-		list = new JList<String>(listElement);
-		listScroller = new JScrollPane(list);
+		list.setModel(listElement);
+		listScroller.setViewportView(list);
 		this.validate();
 	}
 
