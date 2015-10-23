@@ -1,26 +1,37 @@
 package appli.vue.panels;
 
+import javax.swing.ButtonGroup;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JRadioButtonMenuItem;
 
-public class PanelMenu extends JMenuBar{
+import appli.controleur.Controleur;
+import appli.controleur.MenuBarControleur;
 
-	private static final long serialVersionUID = 1L;
+public class PanelMenu{
+
 	public JMenuBar menuBar = new JMenuBar();
 
-	public PanelMenu() {
-		
+	public PanelMenu(Controleur controleur) {
+		MenuBarControleur menuControleur = new MenuBarControleur(controleur);
 		JMenu menuFichier = new JMenu("Fichier");
 		
-			JMenu menuSaveOption = new JMenu("Option sauvegarde");
+			JMenu menuSaveOption = new JMenu("Persistance");
 				JRadioButtonMenuItem bdd = new JRadioButtonMenuItem("Base de Donnée");
 				bdd.setSelected(true);
 				JRadioButtonMenuItem arrayList = new JRadioButtonMenuItem("ArrayList");
+			ButtonGroup bg = new ButtonGroup();
+				bg.add(bdd);
+				bg.add(arrayList);
 			
-			JMenuItem menuSave = new JMenuItem("Sauvegarder");
+				
+			JMenuItem menuRefresh = new JMenuItem("Refresh");
+			menuRefresh.setActionCommand("refresh");
+			menuRefresh.addActionListener(menuControleur);
 			JMenuItem menuFermer = new JMenuItem("Fermer");
+			menuFermer.setActionCommand("close");
+			menuFermer.addActionListener(menuControleur);
 			
 		JMenu menuEdition = new JMenu("Edition");
 		
@@ -28,7 +39,7 @@ public class PanelMenu extends JMenuBar{
 		menuSaveOption.add(bdd);
 		menuSaveOption.add(arrayList);
 		menuFichier.add(menuSaveOption);
-		menuFichier.add(menuSave);
+		menuFichier.add(menuRefresh);
 		menuFichier.addSeparator();
 		menuFichier.add(menuFermer);
 		

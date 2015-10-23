@@ -24,7 +24,7 @@ public class Fenetre extends JFrame implements IVue {
 		mainPanel.setCentrePanel(new PanelWelcome());
 		
 		this.add(mainPanel);
-		this.setJMenuBar(new PanelMenu().menuBar);
+		this.setJMenuBar(new PanelMenu(controleur).menuBar);
 		setVisible(true);
 	}
 
