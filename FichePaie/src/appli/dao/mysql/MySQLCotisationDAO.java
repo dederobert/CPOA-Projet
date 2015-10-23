@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 import appli.dao.CotisationDAO;
 import appli.modele.metier.Cotisation;
@@ -129,6 +130,26 @@ public class MySQLCotisationDAO implements CotisationDAO {
 				instance = new MySQLCotisationDAO();
 			}
 			return instance;
+		}
+
+		@Override
+		public ArrayList<Cotisation> getAll() {
+			PreparedStatement req = null;
+            ResultSet res = null;
+            ArrayList<Cotisation> cotisations = new ArrayList<Cotisation>();
+            try{
+            	req = this.connexion.prepareStatement("SELECT id_coti,lib_coti,taux_coti FROM COTISATION" );
+            	res = req.executeQuery();
+            	while(res.next())
+            	{
+            		cotisations.add(new Cotisation(res.getInt(1), res.getString(2), res.getDouble(3)));
+            	}
+            }catch(SQLException sqle)
+            {
+            	  System.err.println(this.getClass() + " Erreur lors de l'execution de la requete : "
+                          + sqle.getMessage());
+            }
+			return cotisations;
 		}
 
 }

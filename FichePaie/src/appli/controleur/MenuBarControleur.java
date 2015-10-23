@@ -9,6 +9,7 @@ import appli.dao.factory.Persistance;
 import appli.dao.mysql.Connexion;
 import appli.manager.EmployeManager;
 import appli.modele.metier.Employe;
+import appli.modele.metier.EmployeFichePaie;
 import appli.utils.Utilitaire;
 import appli.vue.FichePaie;
 import appli.vue.panels.PanelMenu;
@@ -51,7 +52,11 @@ public class MenuBarControleur implements ActionListener {
 		case "generer":
 			Employe employe = EmployeManager.getEmploye(controleur.getVue()
 					.getSelectedIndex());
-			FichePaie fichePaie = new FichePaie(employe.getNom(), employe.getPrenom());
+			FichePaie fichePaiePanel = new FichePaie(employe.getNom(), employe.getPrenom());
+			
+			EmployeFichePaie fichePaie = new EmployeFichePaie(employe);
+			fichePaiePanel.getPanel().setTable(fichePaie.getFiche());
+			fichePaiePanel.getPanel().refresh();
 			break;
 		default : break;
 		}

@@ -4,10 +4,10 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import appli.controleur.Controleur;
-import appli.vue.panels.EmployeModif;
 import appli.vue.panels.MainPanel;
 import appli.vue.panels.PanelMenu;
 import appli.vue.panels.PanelWelcome;
+import appli.vue.panels.employe.EmployeModif;
 
 public class Fenetre extends JFrame implements IVue {
 	
@@ -19,6 +19,7 @@ public class Fenetre extends JFrame implements IVue {
 		setSize(1024, 512);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
+		this.setTitle("Fiche de Paye");
 		
 		mainPanel = new MainPanel();
 		mainPanel.setCentrePanel(new PanelWelcome());

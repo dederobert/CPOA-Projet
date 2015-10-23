@@ -1,5 +1,7 @@
 package appli.dao;
 
+import java.util.ArrayList;
+
 import appli.modele.metier.Cotisation;
 
 /**
@@ -10,5 +12,7 @@ import appli.modele.metier.Cotisation;
 public interface CotisationDAO extends DAO<Cotisation>{
 	
 	public Cotisation getByLibelle(String libelle);
+
+	public ArrayList<Cotisation> getAll();
 	
 }

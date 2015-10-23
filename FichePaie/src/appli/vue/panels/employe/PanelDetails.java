@@ -1,4 +1,4 @@
-package appli.vue.panels;
+package appli.vue.panels.employe;
 
 import java.awt.GridLayout;
 

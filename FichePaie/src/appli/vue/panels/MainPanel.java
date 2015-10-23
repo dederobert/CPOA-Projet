@@ -5,6 +5,8 @@ import java.awt.GridLayout;
 
 import javax.swing.JPanel;
 
+import appli.vue.panels.employe.PanelList;
+
 public class MainPanel extends JPanel{
 
 	private static final long serialVersionUID = 8879537991506742304L;

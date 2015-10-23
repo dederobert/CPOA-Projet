@@ -142,4 +142,9 @@ public class ArrayListCotisationDAO implements CotisationDAO{
 		return null;
 	}
 
+	@Override
+	public ArrayList<Cotisation> getAll() {
+		return cotisations;
+	}
+
 }

@@ -12,10 +12,10 @@ import appli.manager.EmployeManager;
 import appli.modele.metier.Employe;
 import appli.utils.Utilitaire;
 import appli.vue.IVue;
-import appli.vue.panels.PanelAjoutEmploye;
-import appli.vue.panels.PanelDetails;
 import appli.vue.panels.PanelMenu;
-import appli.vue.panels.PanelModificationEmploye;
+import appli.vue.panels.employe.PanelAjoutEmploye;
+import appli.vue.panels.employe.PanelDetails;
+import appli.vue.panels.employe.PanelModificationEmploye;
 
 public class Controleur implements ActionListener, ListSelectionListener {
 
