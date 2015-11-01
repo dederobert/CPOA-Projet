@@ -9,9 +9,10 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
 import appli.vue.Fenetre;
+import appli.vue.panels.PanelDetails;
 
 @SuppressWarnings("unused")
-public class PanelDetails extends JPanel {
+public class PanelDetailsEmploye extends JPanel  implements PanelDetails{
 
 	private static final long serialVersionUID = 1L;
 	private JLabel nom = new JLabel();
@@ -25,7 +26,7 @@ public class PanelDetails extends JPanel {
 	private JScrollPane spVariable;
 	String[] colsVariable = { "Libelle", "Valeur" };
 
-	public PanelDetails() {
+	public PanelDetailsEmploye() {
 		this.setLayout(new GridLayout(6, 2));
 		this.add(new JLabel("Nom : "));
 		this.add(nom);
@@ -71,5 +72,11 @@ public class PanelDetails extends JPanel {
 		JTable tab = new JTable(donnees, colsVariable);
 		spVariable.setViewportView(tab);
 		this.validate();
+	}
+
+	public void remplitChamps(String nom, String prenom, String adresse) {
+		this.setNom(nom);
+		this.setPrenom(prenom);
+		this.setAdresse(adresse);
 	}
 }

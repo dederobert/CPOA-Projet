@@ -11,6 +11,7 @@ import appli.manager.EmployeManager;
 import appli.modele.metier.Employe;
 import appli.modele.metier.EmployeFichePaie;
 import appli.utils.Utilitaire;
+import appli.utils.Vue;
 import appli.vue.FichePaie;
 import appli.vue.panels.PanelMenu;
 
@@ -57,6 +58,18 @@ public class MenuBarControleur implements ActionListener {
 			EmployeFichePaie fichePaie = new EmployeFichePaie(employe);
 			fichePaiePanel.getPanel().setTable(fichePaie.getFiche());
 			fichePaiePanel.getPanel().refresh();
+			break;
+		case "employe":
+			controleur.getVue().changeVue(Vue.EMPLOYE);
+			controleur.getVue().refresh();
+			break;
+		case "cotisation":
+			controleur.getVue().changeVue(Vue.COTISATION);
+			controleur.getVue().refresh();
+			break;
+		case "regle":
+			controleur.getVue().changeVue(Vue.REGLE);
+			controleur.getVue().refresh();
 			break;
 		default : break;
 		}

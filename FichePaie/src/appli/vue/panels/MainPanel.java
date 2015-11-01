@@ -1,37 +1,43 @@
 package appli.vue.panels;
 
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.GridLayout;
 
 import javax.swing.JPanel;
 
-import appli.vue.panels.employe.PanelList;
+import appli.vue.panels.employe.PanelListEmploye;
 
-public class MainPanel extends JPanel{
+public class MainPanel extends JPanel {
 
 	private static final long serialVersionUID = 8879537991506742304L;
-	
-	private PanelList rightPanel = new PanelList();
+
+	private PanelList leftPanel = new PanelListEmploye();
 	private JPanel centrePanel = new JPanel();
-	
+
 	public MainPanel() {
 		this.setBackground(Color.WHITE);
-		this.setLayout(new GridLayout(1,2));
-		
-		this.add(rightPanel);
+		this.setLayout(new GridLayout(1, 2));
+
+		this.add((Component) leftPanel);
 		this.add(centrePanel);
-		
+
 	}
 
-
-	public PanelList getRightPanel() {
-		return rightPanel;
+	public PanelList getLeftPanel() {
+		return leftPanel;
 	}
 
-	public void setRightPanel(PanelList rightPanel) {
-		this.remove(rightPanel);
-		this.rightPanel = rightPanel;
-		this.add(rightPanel);
+	public void setLeftPanel(PanelList leftPanel) {
+		this.removeAll();
+		if (leftPanel == null || !(leftPanel instanceof Component)) {
+			System.err.println("Impossible de changé le panel ");
+			return;
+		}
+		this.leftPanel = leftPanel;
+		this.add((Component) this.leftPanel);
+		this.add(new PanelWelcome());
+		this.validate();
 	}
 
 	public JPanel getCentrePanel() {
@@ -40,22 +46,20 @@ public class MainPanel extends JPanel{
 
 	public void setCentrePanel(JPanel centrePanel) {
 		this.remove(1);
-		
-		if (centrePanel == null)
-		{
+
+		if (centrePanel == null) {
 			this.centrePanel = new PanelWelcome();
-			
-		}else{
+
+		} else {
 			this.centrePanel = centrePanel;
 		}
-		
+
 		this.add(this.centrePanel);
-		
+
 		this.validate();
 	}
 
-
 	public int getSelectedIndex() {
-		return rightPanel.getSelectedIndex();
+		return leftPanel.getSelectedIndex();
 	}
 }

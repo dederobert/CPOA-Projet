@@ -13,6 +13,15 @@ public class CotisationManager {
 		cotisations = Utilitaire.getFactory().getCotisationDAO().getAll();
 		return cotisations;
 	}
+
+	public static Cotisation getCotisation(int selectedIndex) {
+		return cotisations.get(selectedIndex);
+	}
+
+	public static void refresh() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 
 }

@@ -123,4 +123,9 @@ public class ArrayListRegleDAO implements RegleDAO{
 		this.regles = regles;
 	}
 
+	@Override
+	public ArrayList<Regle> getAllRegle() {
+		return regles;
+	}
+
 }

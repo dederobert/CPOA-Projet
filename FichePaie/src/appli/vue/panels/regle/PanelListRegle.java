@@ -1,4 +1,4 @@
-package appli.vue.panels.employe;
+package appli.vue.panels.regle;
 
 import java.awt.GridLayout;
 import java.util.ArrayList;
@@ -12,17 +12,18 @@ import javax.swing.JTextField;
 import javax.swing.ListSelectionModel;
 
 import appli.vue.Fenetre;
+import appli.vue.panels.PanelList;
 
-public class PanelList extends JPanel{
+public class PanelListRegle extends JPanel implements PanelList {
 
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 333431897276404566L;
 	private JList<String> list;
 	DefaultListModel<String> listElement = new DefaultListModel<String>();
 	JScrollPane listScroller;
 	JTextField recherche;
+	
+	public PanelListRegle() {
 
-	public PanelList() {
-		
 		this.setLayout(new GridLayout(3,1));
 		JPanel rechercher = new JPanel();
 		recherche = new JTextField("Rechercher");
@@ -30,8 +31,6 @@ public class PanelList extends JPanel{
 		recherche.addActionListener(Fenetre.getControleur());
 		rechercher.add(recherche);
 		this.add(rechercher);
-		
-		
 		
 		ArrayList<String> listString = Fenetre.getControleur().getList();
 		for(String chaine: listString)
@@ -70,6 +69,17 @@ public class PanelList extends JPanel{
 		this.add(buttons);
 	}
 
+	@Override
+	public int getSelectedIndex() {
+		return list.getSelectedIndex();
+	}
+
+	@Override
+	public String getTextRecherche() {
+		return recherche.getText().trim();
+	}
+
+	@Override
 	public void refresh() {
 		ArrayList<String> listString = Fenetre.getControleur().getList();
 		listElement.clear();
@@ -80,13 +90,8 @@ public class PanelList extends JPanel{
 		list.setModel(listElement);
 		listScroller.setViewportView(list);
 		this.validate();
+		
 	}
+	
 
-	public int getSelectedIndex() {
-		return list.getSelectedIndex();
-	}
-
-	public String getTextRecherche() {
-		return recherche.getText().trim();
-	}
 }

@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 import appli.dao.RegleDAO;
 import appli.modele.metier.Regle;
@@ -107,6 +108,25 @@ public class MySQLRegleDAO implements RegleDAO {
 			instance = new MySQLRegleDAO();
 		}
 		return instance;
+	}
+
+	@Override
+	public ArrayList<Regle> getAllRegle() {
+		ArrayList<Regle> regles = new ArrayList<Regle>();
+		PreparedStatement requete = null;
+		ResultSet resultat = null;
+		try{
+			requete = connexion.prepareStatement("SELECT id_regle, `condition`, action, actif FROM REGLE ");
+			resultat = requete.executeQuery();
+			while(resultat.next()){
+				Regle regle = new Regle(resultat.getInt(1),resultat.getString(2),resultat.getString(3), resultat.getBoolean(4));
+				regles.add(regle);
+				}
+		}
+		catch(SQLException sqle){
+			 System.err.println(this.getClass() + " Impossible d'obtenir tous les Regles : "+sqle.getMessage());
+		}
+		return regles;
 	}
 
 }

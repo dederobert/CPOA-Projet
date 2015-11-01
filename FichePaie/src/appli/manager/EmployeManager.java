@@ -11,9 +11,9 @@ import appli.utils.Utilitaire;
 
 public class EmployeManager {
 	
-	static ArrayList<Employe> employes;
+	static ArrayList<Employe> employes = new ArrayList<Employe>();
 	
-	public static ArrayList<Employe> getAllEmploye(){
+	public static ArrayList<Employe> getAll(){
 		employes = Utilitaire.getFactory().getEmployeDAO().getAllEmploye();
 		return employes;
 	}

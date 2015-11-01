@@ -3,11 +3,7 @@ package appli.vue;
 import java.awt.Dimension;
 
 import javax.swing.JFrame;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
 
-import appli.controleur.DocumentControleur;
 import appli.vue.panels.PanelFichePaie;
 
 public class FichePaie extends JFrame{
@@ -22,16 +18,6 @@ public class FichePaie extends JFrame{
 		this.setDefaultCloseOperation(HIDE_ON_CLOSE);
 		this.setLocationRelativeTo(null);
 		
-		JMenuBar menuBar = new JMenuBar();
-		JMenu fichierMenu = new JMenu("Fichier");
-		JMenu exporterMenu = new JMenu("Exporter en ...");
-		JMenuItem exporterPDF = new JMenuItem("PDF");
-		exporterPDF.setActionCommand("PDF");
-		exporterPDF.addActionListener(new DocumentControleur());
-		exporterMenu.add(exporterPDF);
-		fichierMenu.add(exporterMenu);
-		menuBar.add(fichierMenu);
-		this.setJMenuBar(menuBar);
 		panel.setIdentite("M(me). " + nom.toUpperCase() + " " + prenom);
 		
 		this.add(panel);

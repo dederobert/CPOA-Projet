@@ -9,7 +9,6 @@ public class Main {
 		Controleur controleur = new Controleur();
 		Fenetre fenetre = new Fenetre(controleur);
 		controleur.setVue(fenetre);
-		
 
 	}
 

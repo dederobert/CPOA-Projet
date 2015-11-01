@@ -46,7 +46,17 @@ public class PanelMenu{
 			menuFermer.setActionCommand("close");
 			menuFermer.addActionListener(menuControleur);
 			
-		JMenu menuEdition = new JMenu("Edition");
+		JMenu menuVue = new JMenu("Vue");
+			JMenuItem itemEmploye = new JMenuItem("Employe");
+			itemEmploye.setActionCommand("employe");
+			itemEmploye.addActionListener(menuControleur);
+			JMenuItem itemCotisation = new JMenuItem("Cotisation");
+			itemCotisation.setActionCommand("cotisation");
+			itemCotisation.addActionListener(menuControleur);
+			JMenuItem itemRegle = new JMenuItem("Regle");
+			itemRegle.setActionCommand("regle");
+			itemRegle.addActionListener(menuControleur);
+		
 		JMenu menuFichePai = new JMenu("Fiche de paie");
 			menuGenerer = new JMenuItem("Generer");
 			menuGenerer.setActionCommand("generer");
@@ -61,8 +71,12 @@ public class PanelMenu{
 		menuFichier.add(menuFermer);
 		menuFichePai.add(menuGenerer);
 		
+		menuVue.add(itemEmploye);
+		menuVue.add(itemCotisation);
+		menuVue.add(itemRegle);
+		
 		menuBar.add(menuFichier);
-		menuBar.add(menuEdition);
+		menuBar.add(menuVue);
 		menuBar.add(menuFichePai);
 	}
 
@@ -80,6 +94,5 @@ public class PanelMenu{
 
 	public static void setGenererEnable(boolean etat) {
 		menuGenerer.setEnabled(etat);
-		
 	}
 }
