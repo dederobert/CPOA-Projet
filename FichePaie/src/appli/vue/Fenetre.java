@@ -130,4 +130,22 @@ public class Fenetre extends JFrame implements IVue {
 	public Double getTaux() {
 		return ((CotisationModif) mainPanel.getCentrePanel()).getTaux();
 	}
+
+	@Override
+	public String getCondition() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getAction() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean isActif() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }

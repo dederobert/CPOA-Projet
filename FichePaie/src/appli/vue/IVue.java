@@ -30,5 +30,11 @@ public interface IVue {
 
 	public Double getTaux();
 
+	public String getCondition();
+
+	public String getAction();
+
+	public boolean isActif();
+
 
 }

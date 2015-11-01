@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+import javax.swing.text.StyledEditorKit.BoldAction;
 
 import appli.manager.CotisationManager;
 import appli.manager.EmployeManager;
@@ -36,9 +37,13 @@ public class Controleur implements ActionListener, ListSelectionListener {
 		String prenom;
 		String adresse;
 		String libelle;
+		String condition;
+		String action;
+		boolean actif;
 		Double taux;
 		Employe employe;
 		Cotisation cotisation;
+		Regle regle;
 		JOptionPane jop;
 		switch (event.getActionCommand()) {
 		case "addEmploye":
@@ -72,6 +77,24 @@ public class Controleur implements ActionListener, ListSelectionListener {
 			cotisation = new Cotisation(libelle, taux);
 			Utilitaire.getFactory().getCotisationDAO().create(cotisation);
 			CotisationManager.refresh();
+			vue.refresh();
+			vue.changeCentrePanel(null);
+			break;
+		case "addRegle":
+			condition = vue.getCondition();
+			action = vue.getAction();
+			actif = vue.isActif();
+
+			if (condition.isEmpty() || action.isEmpty() || condition == null
+					|| action == null) {
+				JOptionPane.showMessageDialog(null,
+						"Attention à remplire tout les champs !", "erreur",
+						JOptionPane.ERROR_MESSAGE);
+				break;
+			}
+			regle = new Regle(condition, action, actif);
+			Utilitaire.getFactory().getRegleDAO().create(regle);
+			RegleManager.refresh();
 			vue.refresh();
 			vue.changeCentrePanel(null);
 			break;
@@ -263,7 +286,8 @@ public class Controleur implements ActionListener, ListSelectionListener {
 				} else {
 					PanelDetailsRegle panelDetails = new PanelDetailsRegle();
 					Regle regle = RegleManager.getRegle(vue.getSelectedIndex());
-					panelDetails.remplitChamps(regle.getCondition(), regle.getAction(), regle.isActif());
+					panelDetails.remplitChamps(regle.getCondition(),
+							regle.getAction(), regle.isActif());
 					vue.changeCentrePanel(panelDetails);
 				}
 			}

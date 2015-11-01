@@ -19,7 +19,7 @@ public class CotisationManager {
 	}
 
 	public static void refresh() {
-		// TODO Auto-generated method stub
+		cotisations = Utilitaire.getFactory().getCotisationDAO().getAll();
 		
 	}
 	

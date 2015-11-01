@@ -67,7 +67,6 @@ public class PanelListCotisation extends JPanel implements PanelList {
 
 	@Override
 	public String getTextRecherche() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 

@@ -18,4 +18,9 @@ public class RegleManager {
 		return regles;
 	}
 
+	public static void refresh() {
+		regles = Utilitaire.getFactory().getRegleDAO().getAllRegle();
+		
+	}
+
 }
